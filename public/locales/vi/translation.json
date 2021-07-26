@@ -1,0 +1,7 @@
+{
+  "title": "Chào mừng đến với i18n",
+  "description": {
+    "part1": "Để bắt đầu, chỉnh sửa <1>src/App.js</1> và lưu để tải",
+    "part2": "Chuyển ngôn ngữ bằng nút"
+  }
+}
