@@ -17,6 +17,7 @@
     }
   }
   .header-line {
+    z-index: 500;
     width: 900px;
     position: absolute;
     left: 50%;
@@ -36,6 +37,7 @@
     left: 0%;
     bottom: 0%;
     transform: translateY(100%);
+    z-index: 1000;
     display: flex;
     flex-direction: column;
     width: 100%;
