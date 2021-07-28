@@ -1,9 +1,172 @@
 {
-  "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode" }
+  "banner": [
+    "https://www.bhdstar.vn/wp-content/uploads/2021/04/KeyartFA_Web.png",
+    "https://www.bhdstar.vn/wp-content/uploads/2021/05/BHDS-ToanQuoc-TamNghi-Thang05-Web.png",
+    "https://www.bhdstar.vn/wp-content/uploads/2021/04/Teaser_CRM_Web.jpg",
+    "https://www.bhdstar.vn/wp-content/uploads/2021/05/BHDS-ToanQuoc-TamNghi-Thang05-Web.png",
+    "https://www.bhdstar.vn/wp-content/uploads/2021/03/AW_BHD_1920x1080.png"
   ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
+  "events": [
+    "https://www.bhdstar.vn/wp-content/uploads/2018/03/admin-ajax.jpeg",
+    "https://www.bhdstar.vn/wp-content/uploads/2017/03/BHDStar-Movie365_710x320.jpg",
+    "https://www.bhdstar.vn/wp-content/uploads/2017/10/BHD-Star-SuatSom-710x320.jpg"
   ],
-  "profile": { "name": "typicode" }
+  "movies": [
+    {
+      "name": "No time to die",
+      "avatar": "https://booking.bhdstar.vn/CDN/media/entity/get/FilmPosterGraphic/HO00002019?referenceScheme=HeadOffice&allowPlaceHolder=true&height=500",
+      "director": "Adam Wingard",
+      "cast": "Millie Bobby Brown, Alexander Skarsgård, Rebecca Hall, Eiza González, Kyle Chandler",
+      "releaseDate": "16/05/2020",
+      "runningTime": "123",
+      "language": "English",
+      "rate": "C12",
+      "status": "showing",
+      "id": "1"
+    },
+    {
+      "name": "Last night in soho",
+      "avatar": "https://booking.bhdstar.vn/CDN/media/entity/get/FilmPosterGraphic/HO00002328?referenceScheme=HeadOffice&allowPlaceHolder=true&height=500",
+      "director": "Adam Wingard",
+      "cast": "Millie Bobby Brown, Alexander Skarsgård, Rebecca Hall, Eiza González, Kyle Chandler",
+      "releaseDate": "16/05/2020",
+      "runningTime": "123",
+      "language": "English",
+      "rate": "C12",
+      "status": "showing",
+      "id": "2"
+    },
+    {
+      "name": "Shang-chi",
+      "avatar": "https://booking.bhdstar.vn/CDN/media/entity/get/FilmPosterGraphic/HO00002327?referenceScheme=HeadOffice&allowPlaceHolder=true&height=500",
+      "director": "Adam Wingard",
+      "cast": "Millie Bobby Brown, Alexander Skarsgård, Rebecca Hall, Eiza González, Kyle Chandler",
+      "releaseDate": "16/05/2020",
+      "runningTime": "123",
+      "language": "English",
+      "rate": "C12",
+      "status": "showing",
+      "id": "3"
+    },
+    {
+      "name": "Spider man",
+      "avatar": "https://booking.bhdstar.vn/CDN/media/entity/get/FilmPosterGraphic/HO00002323?referenceScheme=HeadOffice&allowPlaceHolder=true&height=500",
+      "director": "Adam Wingard",
+      "cast": "Millie Bobby Brown, Alexander Skarsgård, Rebecca Hall, Eiza González, Kyle Chandler",
+      "releaseDate": "16/05/2020",
+      "runningTime": "123",
+      "language": "English",
+      "rate": "C12",
+      "status": "showing",
+      "id": "4"
+    },
+    {
+      "name": "The boss baby",
+      "avatar": "https://booking.bhdstar.vn/CDN/media/entity/get/FilmPosterGraphic/HO00002226?referenceScheme=HeadOffice&allowPlaceHolder=true&height=500",
+      "director": "Adam Wingard",
+      "cast": "Millie Bobby Brown, Alexander Skarsgård, Rebecca Hall, Eiza González, Kyle Chandler",
+      "releaseDate": "16/05/2020",
+      "runningTime": "123",
+      "language": "English",
+      "rate": "C12",
+      "status": "showing",
+      "id": "5"
+    },
+    {
+      "name": "The suicide squad",
+      "avatar": "https://booking.bhdstar.vn/CDN/media/entity/get/FilmPosterGraphic/HO00002313?referenceScheme=HeadOffice&allowPlaceHolder=true&height=500",
+      "director": "Adam Wingard",
+      "cast": "Millie Bobby Brown, Alexander Skarsgård, Rebecca Hall, Eiza González, Kyle Chandler",
+      "releaseDate": "16/05/2020",
+      "runningTime": "123",
+      "language": "English",
+      "rate": "C12",
+      "status": "showing",
+      "id": "6"
+    },
+    {
+      "name": "Venom",
+      "avatar": "https://booking.bhdstar.vn/CDN/media/entity/get/FilmPosterGraphic/HO00002326?referenceScheme=HeadOffice&allowPlaceHolder=true&height=500",
+      "director": "Adam Wingard",
+      "cast": "Millie Bobby Brown, Alexander Skarsgård, Rebecca Hall, Eiza González, Kyle Chandler",
+      "releaseDate": "16/05/2020",
+      "runningTime": "123",
+      "language": "English",
+      "rate": "C12",
+      "status": "showing",
+      "id": "7"
+    },
+    {
+      "name": "Enteral",
+      "avatar": "https://booking.bhdstar.vn/CDN/media/entity/get/FilmPosterGraphic/HO00002324?referenceScheme=HeadOffice&allowPlaceHolder=true&height=500",
+      "director": "Adam Wingard",
+      "cast": "Millie Bobby Brown, Alexander Skarsgård, Rebecca Hall, Eiza González, Kyle Chandler",
+      "releaseDate": "16/05/2020",
+      "runningTime": "123",
+      "language": "English",
+      "rate": "C12",
+      "status": "showing",
+      "id": "8"
+    },
+    {
+      "name": "No time to die",
+      "avatar": "https://booking.bhdstar.vn/CDN/media/entity/get/FilmPosterGraphic/HO00002019?referenceScheme=HeadOffice&allowPlaceHolder=true&height=500",
+      "director": "Adam Wingard",
+      "cast": "Millie Bobby Brown, Alexander Skarsgård, Rebecca Hall, Eiza González, Kyle Chandler",
+      "releaseDate": "16/05/2020",
+      "runningTime": "123",
+      "language": "English",
+      "rate": "C12",
+      "status": "coming",
+      "id": "9"
+    },
+    {
+      "name": "Last night in soho",
+      "avatar": "https://booking.bhdstar.vn/CDN/media/entity/get/FilmPosterGraphic/HO00002328?referenceScheme=HeadOffice&allowPlaceHolder=true&height=500",
+      "director": "Adam Wingard",
+      "cast": "Millie Bobby Brown, Alexander Skarsgård, Rebecca Hall, Eiza González, Kyle Chandler",
+      "releaseDate": "16/05/2020",
+      "runningTime": "123",
+      "language": "English",
+      "rate": "C12",
+      "status": "coming",
+      "id": "10"
+    },
+    {
+      "name": "Shang-chi",
+      "avatar": "https://booking.bhdstar.vn/CDN/media/entity/get/FilmPosterGraphic/HO00002327?referenceScheme=HeadOffice&allowPlaceHolder=true&height=500",
+      "director": "Adam Wingard",
+      "cast": "Millie Bobby Brown, Alexander Skarsgård, Rebecca Hall, Eiza González, Kyle Chandler",
+      "releaseDate": "16/05/2020",
+      "runningTime": "123",
+      "language": "English",
+      "rate": "C12",
+      "status": "coming",
+      "id": "11"
+    },
+    {
+      "name": "Spider man",
+      "avatar": "https://booking.bhdstar.vn/CDN/media/entity/get/FilmPosterGraphic/HO00002323?referenceScheme=HeadOffice&allowPlaceHolder=true&height=500",
+      "director": "Adam Wingard",
+      "cast": "Millie Bobby Brown, Alexander Skarsgård, Rebecca Hall, Eiza González, Kyle Chandler",
+      "releaseDate": "16/05/2020",
+      "runningTime": "123",
+      "language": "English",
+      "rate": "C12",
+      "status": "coming",
+      "id": "12"
+    },
+    {
+      "name": "Spider man",
+      "avatar": "https://booking.bhdstar.vn/CDN/media/entity/get/FilmPosterGraphic/HO00002323?referenceScheme=HeadOffice&allowPlaceHolder=true&height=500",
+      "director": "Adam Wingard",
+      "cast": "Millie Bobby Brown, Alexander Skarsgård, Rebecca Hall, Eiza González, Kyle Chandler",
+      "releaseDate": "16/05/2020",
+      "runningTime": "123",
+      "language": "English",
+      "rate": "C12",
+      "status": "preShowing",
+      "id": "13"
+    }
+  ]
 }

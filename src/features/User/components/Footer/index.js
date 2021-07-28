@@ -8,8 +8,8 @@ function Footer(props) {
       <div className="container">
         <div className="row">
           <div className="col-4">
-            <div className="title">Về bhd star</div>
-            <hr width="60px" />
+            <div className="title"> {t("aboutBHD")}</div>
+            <hr style={{ width: "60px" }} />
             <div className="d-flex flex-column">
               <a
                 target="_blank"
@@ -39,8 +39,8 @@ function Footer(props) {
             </div>
           </div>
           <div className="col-4">
-            <div className="title">Quy định và điều khoản</div>
-            <hr width="60px" />
+            <div className="title">{t("regulationAndRule")}</div>
+            <hr style={{ width: "60px" }} />
             <div className="d-flex flex-column">
               <a
                 target="_blank"
@@ -74,7 +74,7 @@ function Footer(props) {
           </div>
         </div>
         <div className="footer-copy mt-5 d-flex align-items-center flex-column">
-          <hr width="70%" />
+          <hr style={{ width: "70%" }} />
           <span>Copy right BHD Cinema</span>
         </div>
       </div>

@@ -1,0 +1,24 @@
+.authentication {
+  min-height: 70vh;
+  padding: 40px;
+  background-image: url("./../../../../assets/images/bg-cinema-10.png");
+  &__title {
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: $white-color;
+      padding: 5px 30px;
+      &:first-child {
+        border-right: 2px solid $white-color;
+      }
+      &:hover {
+        color: $yellow-color;
+      }
+    }
+    .active {
+      color: $yellow-color;
+    }
+  }
+}
