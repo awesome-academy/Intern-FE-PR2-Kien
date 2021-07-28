@@ -6,6 +6,8 @@ import { store } from "./app/store"
 import { Provider } from "react-redux"
 import * as serviceWorker from "./serviceWorker"
 
+import "@fortawesome/fontawesome-free/css/all.min.css"
+import "bootstrap/dist/css/bootstrap.min.css"
 import "./i18n"
 
 ReactDOM.render(

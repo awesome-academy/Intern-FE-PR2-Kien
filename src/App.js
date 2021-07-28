@@ -4,12 +4,13 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
   Redirect
 } from "react-router-dom"
 import { ROOT_PATH, ADMIN_PATH, USER_PATH } from "./constant/route"
 
 import Loading from "./components/Loading"
+
+import "./App.sass"
 const User = React.lazy(() => import("./features/User"))
 const Admin = React.lazy(() => import("./features/Admin"))
 
@@ -17,7 +18,7 @@ export default function App() {
   return (
     <Suspense fallback={<Loading />}>
       <Router>
-        <ul>
+        {/* <ul>
           <li>
             <Link to="/">Users 1</Link>
           </li>
@@ -27,7 +28,7 @@ export default function App() {
           <li>
             <Link to="/admin">Admin</Link>
           </li>
-        </ul>
+        </ul> */}
         <Switch>
           <Redirect exact from={ROOT_PATH} to={USER_PATH} />
 
