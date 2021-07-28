@@ -8,7 +8,7 @@ function Footer(props) {
       <div className="container">
         <div className="row">
           <div className="col-4">
-            <div className="title">Về bhd star</div>
+            <div className="title"> {t("aboutBHD")}</div>
             <hr width="60px" />
             <div className="d-flex flex-column">
               <a
@@ -39,7 +39,7 @@ function Footer(props) {
             </div>
           </div>
           <div className="col-4">
-            <div className="title">Quy định và điều khoản</div>
+            <div className="title">{t("regulationAndRule")}</div>
             <hr width="60px" />
             <div className="d-flex flex-column">
               <a

@@ -6,6 +6,7 @@ import classNames from "classnames"
 import SwitchLang from "./../SwitchLang"
 import logo from "./../../../../assets/images/logo.png"
 import lineHeader from "./../../../../assets/images/line-header1.png"
+import { SIGN_IN_PATH } from "../../../../constant/route"
 
 const Example = () => {
   const [showMenu, setShowMenu] = useState(false)
@@ -28,7 +29,7 @@ const Example = () => {
       </div>
       <div className="d-flex align-items-center">
         <div className="d-flex">
-          <Link className="btn header-btn me-4" to="/">
+          <Link className="btn header-btn me-4" to={SIGN_IN_PATH}>
             {t("login")}
           </Link>
         </div>
