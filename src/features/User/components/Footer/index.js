@@ -9,7 +9,7 @@ function Footer(props) {
         <div className="row">
           <div className="col-4">
             <div className="title"> {t("aboutBHD")}</div>
-            <hr width="60px" />
+            <hr style={{ width: "60px" }} />
             <div className="d-flex flex-column">
               <a
                 target="_blank"
@@ -40,7 +40,7 @@ function Footer(props) {
           </div>
           <div className="col-4">
             <div className="title">{t("regulationAndRule")}</div>
-            <hr width="60px" />
+            <hr style={{ width: "60px" }} />
             <div className="d-flex flex-column">
               <a
                 target="_blank"
@@ -74,7 +74,7 @@ function Footer(props) {
           </div>
         </div>
         <div className="footer-copy mt-5 d-flex align-items-center flex-column">
-          <hr width="70%" />
+          <hr style={{ width: "70%" }} />
           <span>Copy right BHD Cinema</span>
         </div>
       </div>
