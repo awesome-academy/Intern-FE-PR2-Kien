@@ -1,5 +1,18 @@
 {
   "title": "Welcome to react using react-i18next",
+  "buyTicket": "Buy ticket",
+  "login": "Login",
+  "login": "Đăng nhập",
+  "showTime": "Show time",
+  "theaters": "Theaters",
+  "events": "Event",
+  "service": "Service",
+  "recruitment": "Recruitment",
+  "aboutUs": "About us",
+  "regulation": "Regulation",
+  "rules": "Rules",
+  "tutorial": "Instructions for booking tickets online",
+  "policy": "Policy on protection of consumer information",
   "description": {
     "part1": "To get started, edit <1>src/App.js</1> and save to reload.",
     "part2": "Switch language between english and german using buttons above."

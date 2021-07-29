@@ -1,5 +1,17 @@
 {
   "title": "Chào mừng đến với i18n",
+  "buyTicket": "Mua vé",
+  "login": "Đăng nhập",
+  "showTime": "Lịch chiếu",
+  "theaters": "Thông tin rạp",
+  "events": "Khuyến mãi, sự kiện",
+  "service": "Dịch vụ",
+  "recruitment": "Tuyển dụng",
+  "aboutUs": "Về chúng tôi",
+  "regulation": "Quy định thành viên",
+  "rules": "Điều khoản",
+  "tutorial": "Hướng dẫn đặt vé trực tuyến",
+  "policy": "Chính sách bảo vệ thông tin người tiêu dùng",
   "description": {
     "part1": "Để bắt đầu, chỉnh sửa <1>src/App.js</1> và lưu để tải",
     "part2": "Chuyển ngôn ngữ bằng nút"
