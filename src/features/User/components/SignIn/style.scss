@@ -1,0 +1,16 @@
+.form-login {
+  background-color: $white-color;
+  width: 100%;
+  max-width: 500px;
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  button {
+    background-color: $green-color;
+    border: none;
+    &:focus {
+      background-color: $green-color;
+      border: none;
+    }
+  }
+}
