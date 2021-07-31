@@ -10,6 +10,7 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import "./i18n"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
+import "react-toastify/dist/ReactToastify.css"
 
 ReactDOM.render(
   <React.StrictMode>

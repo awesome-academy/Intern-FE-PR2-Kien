@@ -6,10 +6,12 @@ import Footer from "./components/Footer"
 import MainPage from "./pages/MainPage"
 import DetailMovie from "./pages/DetailMovie"
 import Authen from "./pages/Authentication "
+import OrderPage from "./pages/OrderPage"
 import {
   AUTHEN_PATH,
   USER_PATH,
-  DETAIL_MOVIE_PATH
+  DETAIL_MOVIE_PATH,
+  ORDER_PATH
 } from "./../../constant/route"
 
 export default function User() {
@@ -21,6 +23,7 @@ export default function User() {
           <Route exact path={USER_PATH} component={MainPage} />
           <Route path={DETAIL_MOVIE_PATH} component={DetailMovie} />
           <Route path={AUTHEN_PATH} component={Authen} />
+          <Route path={ORDER_PATH} component={OrderPage} />
         </Switch>
       </div>
       <Footer />

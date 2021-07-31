@@ -55,6 +55,7 @@ export default function MainEvent({ events }) {
       }
     ]
   }
+
   return (
     <div className="events">
       <div className="events__title">Sự kiện</div>

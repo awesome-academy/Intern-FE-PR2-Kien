@@ -4,6 +4,7 @@ import { Card, CardBody, CardTitle } from "reactstrap"
 
 const CardMovies = ({ movie }) => {
   const { path } = useRouteMatch()
+
   return (
     <div>
       <Card className="text-center">
@@ -13,8 +14,7 @@ const CardMovies = ({ movie }) => {
           <Link
             className="btn btn-secondary"
             to={{
-              pathname: `${path}/movie`,
-              search: `?id=${movie.id}`
+              pathname: `${path}/movie/${movie.id}`
             }}
           >
             Mua vé

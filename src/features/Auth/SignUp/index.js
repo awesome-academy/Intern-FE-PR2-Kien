@@ -1,10 +1,12 @@
 import { Form, Formik, FastField } from "formik"
 import React from "react"
-import InputField from "../../../../components/CustomField/InputField"
+import InputField from "../../../components/CustomField/InputField"
 import { Button, FormGroup } from "reactstrap"
 import * as Yup from "yup"
+import { useTranslation } from "react-i18next"
 
 function SignUp(props) {
+  const { t } = useTranslation()
   const initialValue = {
     firstName: "",
     lastName: "",
@@ -12,24 +14,31 @@ function SignUp(props) {
     password: "",
     confirmPassword: ""
   }
+
   const validationSchema = Yup.object().shape({
     firstName: Yup.string()
-      .max(15, "Must be 15 characters or less")
-      .required("Required"),
+      .max(15, `${t("tooLong")}`)
+      .required(`${t("mustRequire")}`),
+
     lastName: Yup.string()
-      .max(20, "Must be 20 characters or less")
-      .required("Required"),
-    email: Yup.string().email("Email is invalid").required("Email is required"),
+      .max(20, `${t("tooLong")}`)
+      .required(`${t("mustRequire")}`),
+
+    email: Yup.string()
+      .email(`${t("emailInvalid")}`)
+      .required(`${t("mustRequire")}`),
+
     password: Yup.string()
-      .min(6, "Password must be at least 6 charaters")
-      .required("Password is required"),
+      .min(6, `${t("tooShort")}`)
+      .required(`${t("mustRequire")}`),
+
     confirmPassword: Yup.string()
-      .oneOf([Yup.ref("password"), null], "Password must match")
-      .required("Confirm password is required")
+      .oneOf([Yup.ref("password"), null], `${t("idPasswordMatch")}`)
+      .required(`${t("mustRequire")}`)
   })
-  const hanldeSubmit = value => {
-    console.log(value)
-  }
+
+  const hanldeSubmit = value => {}
+
   return (
     <div className="form-login">
       <Formik
