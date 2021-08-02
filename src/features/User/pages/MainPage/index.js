@@ -1,16 +1,30 @@
-import React from "react"
+import React, { useEffect } from "react"
 
-import { useTranslation, Trans } from "react-i18next"
+import BannerCarousel from "../../components/BannerCarousel"
+import SectionMovies from "../../components/SectionMovies"
+import MainEvent from "../../components/MainEvent"
+import { useSelector, useDispatch } from "react-redux"
+import {
+  bannerSelector,
+  eventsSelector,
+  getBanner,
+  getEvent
+} from "./../../userSlice.js"
 
-function MainPage(props) {
-  const { t } = useTranslation()
+function MainPage() {
+  const dispatch = useDispatch()
+  const banner = useSelector(bannerSelector)
+  const events = useSelector(eventsSelector)
+  useEffect(() => {
+    dispatch(getBanner())
+    dispatch(getEvent())
+  }, [dispatch])
 
   return (
     <div className="user">
-      <Trans i18nKey="description.part1">
-        To get started, edit <code>src/App.js</code> and save to
-      </Trans>
-      <div>{t("description.part2")}</div>
+      <BannerCarousel banner={banner} />
+      <SectionMovies />
+      <MainEvent events={events} />
     </div>
   )
 }

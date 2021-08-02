@@ -1,0 +1,10 @@
+.events {
+  background-image: url("../../../../assets/images/bg-home-02.jpeg");
+  padding: 50px 0;
+  text-align: center;
+  &__title {
+    font-size: 3rem;
+    color: $yellow-color;
+    margin: 20px 0 40px;
+  }
+}
