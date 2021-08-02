@@ -11,6 +11,104 @@
     "https://www.bhdstar.vn/wp-content/uploads/2017/03/BHDStar-Movie365_710x320.jpg",
     "https://www.bhdstar.vn/wp-content/uploads/2017/10/BHD-Star-SuatSom-710x320.jpg"
   ],
+  "news": [
+    {
+      "avatar": "https://www.bhdstar.vn/wp-content/uploads/2021/04/Nivea_QT_Web-470x264.png",
+      "title": "Đi xem phim hay, rinh ngay phần quà",
+      "type": "promotion",
+      "id": 1
+    },
+    {
+      "avatar": "https://www.bhdstar.vn/wp-content/uploads/2021/04/WEBLVV-470x264.jpg",
+      "title": "Tặng voucher giảm giá 100k tại pizzahub",
+      "type": "promotion",
+      "id": 2
+    },
+    {
+      "avatar": "https://www.bhdstar.vn/wp-content/uploads/2021/04/HN_Web-470x264.png",
+      "title": "Lễ lớn phim hay,nhận ngay quà tặng",
+      "type": "promotion",
+      "id": 3
+    },
+    {
+      "avatar": "https://www.bhdstar.vn/wp-content/uploads/2021/03/AW_BHD_1920x1080-470x264.png",
+      "title": "Xem phim đã, nhận ngay 20k từ grap",
+      "type": "promotion",
+      "id": 4
+    },
+    {
+      "avatar": "https://www.bhdstar.vn/wp-content/uploads/2019/11/MOMO_BHD_CB_1920x1080-470x264.jpg",
+      "title": "Hoàn tiền khi thanh toán qua momo",
+      "type": "promotion",
+      "id": 5
+    },
+    {
+      "avatar": "https://www.bhdstar.vn/wp-content/uploads/2021/04/1920x1080-470x264.jpg",
+      "title": "Combo giá sốc -  200k cho 2 người",
+      "type": "promotion",
+      "id": 6
+    },
+    {
+      "avatar": "https://www.bhdstar.vn/wp-content/uploads/2017/02/1920x1080_web_happymonday_chinhgia-470x264.png",
+      "title": "Happy monday - chỉ từ 50k",
+      "type": "promotion",
+      "id": 6
+    },
+    {
+      "avatar": "https://www.bhdstar.vn/wp-content/uploads/2017/06/BHDStar-Movie365_1920x1080_New_Website-470x264.png",
+      "title": "Xem phim mọi lúc mọi nơi",
+      "type": "promotion",
+      "id": 7
+    },
+    {
+      "avatar": "https://www.bhdstar.vn/wp-content/uploads/2019/12/Banner-billboard-3m2x4m3-470x632.jpg",
+      "title": "Khai trương cơ sở mới",
+      "type": "new",
+      "id": 8
+    },
+    {
+      "avatar": "https://www.bhdstar.vn/wp-content/uploads/2019/08/BHD-Star-ScanQR-315x420.jpg",
+      "title": "Quét mã QR, thẳng tiến vào rạp",
+      "type": "new",
+      "id": 9
+    },
+    {
+      "avatar": "https://www.bhdstar.vn/wp-content/uploads/2019/03/BHD-Star-APP-315x420.jpg",
+      "title": "Ra mắt ứng dụng di động",
+      "type": "new",
+      "id": 10
+    },
+    {
+      "avatar": "https://www.bhdstar.vn/wp-content/uploads/2018/08/BHD-STAR-CHECK-IN-CUNG-GAU-314X420-470x627.jpg",
+      "title": "Điểm hẹn của giới trẻ",
+      "type": "new",
+      "id": 11
+    },
+    {
+      "avatar": "https://www.bhdstar.vn/wp-content/uploads/2017/07/BHD-Star-ThongBao-Zalo-315x420.jpg",
+      "title": "Hoàn tiền khi thanh toán qua momo",
+      "type": "new",
+      "id": 12
+    },
+    {
+      "avatar": "https://www.bhdstar.vn/wp-content/uploads/2018/07/BHD-Star-HuongDanOnline-315x420.jpg",
+      "title": "Combo giá sốc -  200k cho 2 người",
+      "type": "new",
+      "id": 13
+    },
+    {
+      "avatar": "https://www.bhdstar.vn/wp-content/uploads/2018/04/BHD-Star-HUE-KhaiTruong-Teasing-315x420.jpg",
+      "title": "Happy monday - chỉ từ 50k",
+      "type": "new",
+      "id": 14
+    },
+    {
+      "avatar": "https://www.bhdstar.vn/wp-content/uploads/2017/07/BHD-Star-ThongBao-Zalo-315x420.jpg",
+      "title": "Xem phim mọi lúc mọi nơi",
+      "type": "new",
+      "id": 15
+    }
+  ],
   "ordered": [
     [
       {
@@ -37,6 +135,29 @@
       {
         "row": "D",
         "name": "D12",
+        "isEmpty": true,
+        "isNearScreen": false,
+        "isChecked": true
+      }
+    ],
+    [
+      {
+        "row": "G",
+        "name": "G7",
+        "isEmpty": true,
+        "isNearScreen": false,
+        "isChecked": true
+      },
+      {
+        "row": "G",
+        "name": "G8",
+        "isEmpty": true,
+        "isNearScreen": false,
+        "isChecked": true
+      },
+      {
+        "row": "G",
+        "name": "G9",
         "isEmpty": true,
         "isNearScreen": false,
         "isChecked": true

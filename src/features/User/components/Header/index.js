@@ -10,7 +10,14 @@ import { toast } from "react-toastify"
 import SwitchLang from "./../SwitchLang"
 import logo from "./../../../../assets/images/logo.png"
 import lineHeader from "./../../../../assets/images/line-header1.png"
-import { SIGN_IN_PATH } from "../../../../constant/route"
+import {
+  SIGN_IN_PATH,
+  USER_INFO_PATH,
+  USER_PATH,
+  NEWS_PATH
+} from "../../../../constant/route"
+
+import SearchInput from "../SearchInput"
 
 const Example = () => {
   const [showMenu, setShowMenu] = useState(false)
@@ -36,16 +43,21 @@ const Example = () => {
           <span>Menu</span>
         </div>
         <SwitchLang />
+        <div className="header-search-input">
+          <SearchInput />
+        </div>
       </div>
       <div className="d-flex align-items-center">
         <div className="d-flex">
           {currentUser.id ? (
             <div>
-              <img
-                className="header-avatar-user"
-                src={currentUser.urlAvatar}
-                alt="avatar"
-              />
+              <Link to={USER_INFO_PATH}>
+                <img
+                  className="header-avatar-user"
+                  src={currentUser.urlAvatar}
+                  alt="avatar"
+                />
+              </Link>
               <button
                 onClick={() => onSignOut()}
                 className="btn header-btn me-4"
@@ -60,50 +72,32 @@ const Example = () => {
           )}
         </div>
       </div>
-      <img className="header-logo" src={logo} alt="logo" />
+      <Link to={USER_PATH} className="header-logo">
+        <img className="w-100" src={logo} alt="logo" />
+      </Link>
       <img className="header-line" src={lineHeader} alt="line-header" />
       <div className={classNames("header__list-menu", { "d-none": !showMenu })}>
         <NavLink
           activeClassName="header__list-menu-selected"
           className="header__list-menu-item"
-          to="/"
+          to={USER_PATH}
+          exact
         >
-          {t("showTime")}
+          {t("mainPage")}
         </NavLink>
         <NavLink
           activeClassName="header__list-menu-selected"
           className="header__list-menu-item"
-          to="/"
+          to={USER_INFO_PATH}
         >
           {t("theaters")}
         </NavLink>
         <NavLink
           activeClassName="header__list-menu-selected"
           className="header__list-menu-item"
-          to="/"
+          to={NEWS_PATH}
         >
           {t("events")}
-        </NavLink>
-        <NavLink
-          activeClassName="header__list-menu-selected"
-          className="header__list-menu-item"
-          to="/"
-        >
-          {t("service")}
-        </NavLink>
-        <NavLink
-          activeClassName="header__list-menu-selected"
-          className="header__list-menu-item"
-          to="/"
-        >
-          {t("recruitment")}
-        </NavLink>
-        <NavLink
-          activeClassName="header__list-menu-selected"
-          className="header__list-menu-item"
-          to="/"
-        >
-          {t("aboutUs")}
         </NavLink>
       </div>
     </div>

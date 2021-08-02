@@ -7,8 +7,29 @@ const initialState = {
   events: [],
   detailMovie: {},
   calendar: [],
-  order: []
+  order: [],
+  movieByName: [],
+  news: [],
+  new: []
 }
+
+export const getNew = createAsyncThunk("user/getNew", async data => {
+  const response = await userApi.getNews(data)
+  return response
+})
+
+export const getNews = createAsyncThunk("user/getNews", async data => {
+  const response = await userApi.getNews(data)
+  return response
+})
+
+export const getMoviesByName = createAsyncThunk(
+  "user/getMovieByName",
+  async data => {
+    const response = await userApi.getMovieByName(data)
+    return response
+  }
+)
 
 export const pushOrdered = createAsyncThunk("user/orderPush", async data => {
   await userApi.pushOrder(data)
@@ -90,7 +111,19 @@ export const userSlide = createSlice({
       state.order = action.payload
     },
 
-    [pushOrdered.fulfilled]: (state, action) => {}
+    [pushOrdered.fulfilled]: (state, action) => {},
+
+    [getMoviesByName.fulfilled]: (state, action) => {
+      state.movieByName = action.payload
+    },
+
+    [getNews.fulfilled]: (state, action) => {
+      state.news = action.payload
+    },
+
+    [getNew.fulfilled]: (state, action) => {
+      state.new = action.payload
+    }
   }
 })
 
@@ -103,5 +136,8 @@ export const eventsSelector = state => state.user.events
 export const detailMovieSelector = state => state.user.detailMovie
 export const calendarSelector = state => state.user.calendar
 export const orderSelector = state => state.user.order
+export const movieByNameSelector = state => state.user.movieByName
+export const newsSelector = state => state.user.news
+export const newSelector = state => state.user.new
 
 export const { orderTicket } = userSlide.actions

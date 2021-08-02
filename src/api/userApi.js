@@ -5,7 +5,8 @@ import {
   GET_ORDER,
   GET_EVENTS,
   GET_MOVIES,
-  PUSH_ORDER
+  PUSH_ORDER,
+  GET_NEWS
 } from "./../constant/route"
 
 const userApi = {
@@ -32,6 +33,18 @@ const userApi = {
   getCalendar: () => {
     const url = GET_CALENDAR
     return axiosClient.get(url)
+  },
+  getMovieByName: params => {
+    const url = GET_MOVIES
+    return axiosClient.get(url, { params })
+  },
+  getNews: params => {
+    const url = GET_NEWS
+    return axiosClient.get(url, { params })
+  },
+  getNew: params => {
+    const url = GET_NEWS
+    return axiosClient.get(url, { params })
   },
   pushOrder: data => {
     const url = PUSH_ORDER
