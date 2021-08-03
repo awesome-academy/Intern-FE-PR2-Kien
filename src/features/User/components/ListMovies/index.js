@@ -38,6 +38,7 @@ export default function ListMovies({ movies }) {
   const num = movies.length > 6 ? 6 : movies.length
   const num1400 = movies.length > 4 ? 4 : movies.length
   const num1024 = movies.length > 2 ? 2 : movies.length
+
   const settings = {
     dots: false,
     infinite: true,
@@ -75,6 +76,7 @@ export default function ListMovies({ movies }) {
       }
     ]
   }
+
   return (
     <div>
       <Slider {...settings}>

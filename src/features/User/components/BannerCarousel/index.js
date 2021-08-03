@@ -43,6 +43,7 @@ export default function BannerCarousel({ banner }) {
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />
   }
+
   return (
     <div>
       <Slider {...settings}>

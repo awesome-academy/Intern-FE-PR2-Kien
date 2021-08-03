@@ -10,6 +10,7 @@ function SwitchLang() {
     i18n.changeLanguage(language)
     setActiveBtn(language)
   }
+
   return (
     <div className="button-group">
       <button

@@ -7,6 +7,7 @@ function InputField(props) {
   const { name } = field
   const { errors, touched } = form
   const showErrors = errors[name] && touched[name]
+
   return (
     <FormGroup row className="m-2">
       {label && (

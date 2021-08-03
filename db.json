@@ -11,6 +11,856 @@
     "https://www.bhdstar.vn/wp-content/uploads/2017/03/BHDStar-Movie365_710x320.jpg",
     "https://www.bhdstar.vn/wp-content/uploads/2017/10/BHD-Star-SuatSom-710x320.jpg"
   ],
+  "ordered": [
+    [
+      {
+        "row": "D",
+        "name": "D9",
+        "isEmpty": true,
+        "isNearScreen": false,
+        "isChecked": true
+      },
+      {
+        "row": "D",
+        "name": "D10",
+        "isEmpty": true,
+        "isNearScreen": false,
+        "isChecked": true
+      },
+      {
+        "row": "D",
+        "name": "D11",
+        "isEmpty": true,
+        "isNearScreen": false,
+        "isChecked": true
+      },
+      {
+        "row": "D",
+        "name": "D12",
+        "isEmpty": true,
+        "isNearScreen": false,
+        "isChecked": true
+      }
+    ]
+  ],
+  "order": [
+    {
+      "row": "A",
+      "col": [
+        {
+          "row": "A",
+          "name": "A1",
+          "isEmpty": true,
+          "isNearScreen": true
+        },
+        {
+          "row": "A",
+          "name": "A2",
+          "isEmpty": true,
+          "isNearScreen": true
+        },
+        {
+          "row": "A",
+          "name": "A3",
+          "isEmpty": true,
+          "isNearScreen": true
+        },
+        {
+          "row": "A",
+          "name": "A4",
+          "isEmpty": false,
+          "isNearScreen": true
+        },
+        {
+          "row": "A",
+          "name": "A5",
+          "isEmpty": false,
+          "isNearScreen": true
+        },
+        {
+          "row": "A",
+          "name": "A6",
+          "isEmpty": true,
+          "isNearScreen": true
+        },
+        {
+          "row": "A",
+          "name": "A7",
+          "isEmpty": true,
+          "isNearScreen": true
+        },
+        {
+          "row": "A",
+          "name": "A8",
+          "isEmpty": true,
+          "isNearScreen": true
+        },
+        {
+          "row": "A",
+          "name": "A9",
+          "isEmpty": true,
+          "isNearScreen": true
+        },
+        {
+          "row": "A",
+          "name": "A10",
+          "isEmpty": true,
+          "isNearScreen": true
+        }
+      ]
+    },
+    {
+      "row": "B",
+      "col": [
+        {
+          "row": "B",
+          "name": "B1",
+          "isEmpty": true,
+          "isNearScreen": true
+        },
+        {
+          "row": "B",
+          "name": "B2",
+          "isEmpty": true,
+          "isNearScreen": true
+        },
+        {
+          "row": "B",
+          "name": "B3",
+          "isEmpty": false,
+          "isNearScreen": true
+        },
+        {
+          "row": "B",
+          "name": "B4",
+          "isEmpty": true,
+          "isNearScreen": true
+        },
+        {
+          "row": "B",
+          "name": "B5",
+          "isEmpty": true,
+          "isNearScreen": true
+        },
+        {
+          "row": "B",
+          "name": "B6",
+          "isEmpty": false,
+          "isNearScreen": true
+        },
+        {
+          "row": "B",
+          "name": "B7",
+          "isEmpty": false,
+          "isNearScreen": true
+        },
+        {
+          "row": "B",
+          "name": "B8",
+          "isEmpty": false,
+          "isNearScreen": true
+        },
+        {
+          "row": "B",
+          "name": "B9",
+          "isEmpty": false,
+          "isNearScreen": true
+        },
+        {
+          "row": "B",
+          "name": "B10",
+          "isEmpty": true,
+          "isNearScreen": true
+        },
+        {
+          "row": "B",
+          "name": "B11",
+          "isEmpty": true,
+          "isNearScreen": true
+        },
+        {
+          "row": "B",
+          "name": "B12",
+          "isEmpty": true,
+          "isNearScreen": true
+        }
+      ]
+    },
+    {
+      "row": "C",
+      "col": [
+        {
+          "row": "C",
+          "name": "C1",
+          "isEmpty": true,
+          "isNearScreen": true
+        },
+        {
+          "row": "C",
+          "name": "C2",
+          "isEmpty": false,
+          "isNearScreen": true
+        },
+        {
+          "row": "C",
+          "name": "C3",
+          "isEmpty": true,
+          "isNearScreen": true
+        },
+        {
+          "row": "C",
+          "name": "C4",
+          "isEmpty": true,
+          "isNearScreen": true
+        },
+        {
+          "row": "C",
+          "name": "C5",
+          "isEmpty": true,
+          "isNearScreen": true
+        },
+        {
+          "row": "C",
+          "name": "C6",
+          "isEmpty": false,
+          "isNearScreen": true
+        },
+        {
+          "row": "C",
+          "name": "C7",
+          "isEmpty": true,
+          "isNearScreen": true
+        },
+        {
+          "row": "C",
+          "name": "C8",
+          "isEmpty": false,
+          "isNearScreen": true
+        },
+        {
+          "row": "C",
+          "name": "C9",
+          "isEmpty": true,
+          "isNearScreen": true
+        },
+        {
+          "row": "C",
+          "name": "C10",
+          "isEmpty": true,
+          "isNearScreen": true
+        }
+      ]
+    },
+    {
+      "row": "D",
+      "col": [
+        {
+          "row": "D",
+          "name": "D1",
+          "isEmpty": true,
+          "isNearScreen": false
+        },
+        {
+          "row": "D",
+          "name": "D2",
+          "isEmpty": true,
+          "isNearScreen": false
+        },
+        {
+          "row": "D",
+          "name": "D3",
+          "isEmpty": true,
+          "isNearScreen": false
+        },
+        {
+          "row": "D",
+          "name": "D4",
+          "isEmpty": true,
+          "isNearScreen": false
+        },
+        {
+          "row": "D",
+          "name": "D5",
+          "isEmpty": true,
+          "isNearScreen": false
+        },
+        {
+          "row": "D",
+          "name": "D6",
+          "isEmpty": true,
+          "isNearScreen": false
+        },
+        {
+          "row": "D",
+          "name": "D7",
+          "isEmpty": true,
+          "isNearScreen": false
+        },
+        {
+          "row": "D",
+          "name": "D8",
+          "isEmpty": true,
+          "isNearScreen": false
+        },
+        {
+          "row": "D",
+          "name": "D9",
+          "isEmpty": true,
+          "isNearScreen": false
+        },
+        {
+          "row": "D",
+          "name": "D10",
+          "isEmpty": true,
+          "isNearScreen": false
+        },
+        {
+          "row": "D",
+          "name": "D11",
+          "isEmpty": true,
+          "isNearScreen": false
+        },
+        {
+          "row": "D",
+          "name": "D12",
+          "isEmpty": true,
+          "isNearScreen": false
+        }
+      ]
+    },
+    {
+      "row": "E",
+      "col": [
+        {
+          "row": "E",
+          "name": "E1",
+          "isEmpty": true,
+          "isNearScreen": false
+        },
+        {
+          "row": "E",
+          "name": "E2",
+          "isEmpty": true,
+          "isNearScreen": false
+        },
+        {
+          "row": "E",
+          "name": "E3",
+          "isEmpty": true,
+          "isNearScreen": false
+        },
+        {
+          "row": "E",
+          "name": "E4",
+          "isEmpty": true,
+          "isNearScreen": false
+        },
+        {
+          "row": "E",
+          "name": "E5",
+          "isEmpty": true,
+          "isNearScreen": false
+        },
+        {
+          "row": "E",
+          "name": "E6",
+          "isEmpty": true,
+          "isNearScreen": false
+        },
+        {
+          "row": "E",
+          "name": "E7",
+          "isEmpty": true,
+          "isNearScreen": false
+        },
+        {
+          "row": "E",
+          "name": "E8",
+          "isEmpty": false,
+          "isNearScreen": false
+        },
+        {
+          "row": "E",
+          "name": "E9",
+          "isEmpty": true,
+          "isNearScreen": false
+        },
+        {
+          "row": "E",
+          "name": "E10",
+          "isEmpty": false,
+          "isNearScreen": false
+        }
+      ]
+    },
+    {
+      "row": "F",
+      "col": [
+        {
+          "row": "F",
+          "name": "F1",
+          "isEmpty": true,
+          "isNearScreen": false
+        },
+        {
+          "row": "F",
+          "name": "F2",
+          "isEmpty": true,
+          "isNearScreen": false
+        },
+        {
+          "row": "F",
+          "name": "F3",
+          "isEmpty": false,
+          "isNearScreen": false
+        },
+        {
+          "row": "F",
+          "name": "F4",
+          "isEmpty": true,
+          "isNearScreen": false
+        },
+        {
+          "row": "F",
+          "name": "F5",
+          "isEmpty": true,
+          "isNearScreen": false
+        },
+        {
+          "row": "F",
+          "name": "F6",
+          "isEmpty": true,
+          "isNearScreen": false
+        },
+        {
+          "row": "F",
+          "name": "F7",
+          "isEmpty": true,
+          "isNearScreen": false
+        },
+        {
+          "row": "F",
+          "name": "F8",
+          "isEmpty": true,
+          "isNearScreen": false
+        },
+        {
+          "row": "F",
+          "name": "F9",
+          "isEmpty": true,
+          "isNearScreen": false
+        },
+        {
+          "row": "F",
+          "name": "F10",
+          "isEmpty": true,
+          "isNearScreen": false
+        },
+        {
+          "row": "F",
+          "name": "F11",
+          "isEmpty": true,
+          "isNearScreen": false
+        },
+        {
+          "row": "F",
+          "name": "F12",
+          "isEmpty": true,
+          "isNearScreen": false
+        }
+      ]
+    },
+    {
+      "row": "G",
+      "col": [
+        {
+          "row": "G",
+          "name": "G1",
+          "isEmpty": true,
+          "isNearScreen": false
+        },
+        {
+          "row": "G",
+          "name": "G2",
+          "isEmpty": true,
+          "isNearScreen": false
+        },
+        {
+          "row": "G",
+          "name": "G3",
+          "isEmpty": true,
+          "isNearScreen": false
+        },
+        {
+          "row": "G",
+          "name": "G4",
+          "isEmpty": true,
+          "isNearScreen": false
+        },
+        {
+          "row": "G",
+          "name": "G5",
+          "isEmpty": true,
+          "isNearScreen": false
+        },
+        {
+          "row": "G",
+          "name": "G6",
+          "isEmpty": true,
+          "isNearScreen": false
+        },
+        {
+          "row": "G",
+          "name": "G7",
+          "isEmpty": true,
+          "isNearScreen": false
+        },
+        {
+          "row": "G",
+          "name": "G8",
+          "isEmpty": true,
+          "isNearScreen": false
+        },
+        {
+          "row": "G",
+          "name": "G9",
+          "isEmpty": true,
+          "isNearScreen": false
+        },
+        {
+          "row": "G",
+          "name": "G10",
+          "isEmpty": true,
+          "isNearScreen": false
+        }
+      ]
+    },
+    {
+      "row": "H",
+      "col": [
+        {
+          "row": "H",
+          "name": "H1",
+          "isEmpty": true,
+          "isNearScreen": false
+        },
+        {
+          "row": "H",
+          "name": "H2",
+          "isEmpty": true,
+          "isNearScreen": false
+        },
+        {
+          "row": "H",
+          "name": "H3",
+          "isEmpty": true,
+          "isNearScreen": false
+        },
+        {
+          "row": "H",
+          "name": "H4",
+          "isEmpty": true,
+          "isNearScreen": false
+        },
+        {
+          "row": "H",
+          "name": "H5",
+          "isEmpty": false,
+          "isNearScreen": false
+        },
+        {
+          "row": "H",
+          "name": "H6",
+          "isEmpty": false,
+          "isNearScreen": false
+        },
+        {
+          "row": "H",
+          "name": "H7",
+          "isEmpty": true,
+          "isNearScreen": false
+        },
+        {
+          "row": "H",
+          "name": "H8",
+          "isEmpty": true,
+          "isNearScreen": false
+        },
+        {
+          "row": "H",
+          "name": "H9",
+          "isEmpty": true,
+          "isNearScreen": false
+        },
+        {
+          "row": "H",
+          "name": "H10",
+          "isEmpty": true,
+          "isNearScreen": false
+        },
+        {
+          "row": "H",
+          "name": "H11",
+          "isEmpty": true,
+          "isNearScreen": false
+        },
+        {
+          "row": "H",
+          "name": "H12",
+          "isEmpty": false,
+          "isNearScreen": false
+        }
+      ]
+    }
+  ],
+  "calendar": [
+    {
+      "day": "01/08/2021",
+      "theater": [
+        {
+          "name": "BHD Cầu Giấy",
+          "showTime": [
+            {
+              "name": "8h-12h",
+              "id": 1
+            },
+            {
+              "name": "15h-17h",
+              "id": 2
+            },
+            {
+              "name": "16h-18h",
+              "id": 3
+            }
+          ]
+        },
+        {
+          "name": "BHD Hà Đông",
+          "showTime": [
+            {
+              "name": "8h-12h",
+              "id": 4
+            },
+            {
+              "name": "15h-17h",
+              "id": 5
+            },
+            {
+              "name": "16h-18h",
+              "id": 6
+            }
+          ]
+        },
+        {
+          "name": "BHD Hồ Gươm",
+          "showTime": [
+            {
+              "name": "8h-12h",
+              "id": 7
+            },
+            {
+              "name": "15h-17h",
+              "id": 8
+            },
+            {
+              "name": "16h-18h",
+              "id": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "02/08/2021",
+      "theater": [
+        {
+          "name": "BHD Cầu Giấy",
+          "showTime": [
+            {
+              "name": "8h-12h",
+              "id": 10
+            },
+            {
+              "name": "15h-17h",
+              "id": 11
+            },
+            {
+              "name": "16h-18h",
+              "id": 12
+            }
+          ]
+        },
+        {
+          "name": "BHD Hà Đông",
+          "showTime": [
+            {
+              "name": "8h-12h",
+              "id": 13
+            },
+            {
+              "name": "15h-17h",
+              "id": 14
+            },
+            {
+              "name": "16h-18h",
+              "id": 15
+            }
+          ]
+        },
+        {
+          "name": "BHD Hồ Gươm",
+          "showTime": [
+            {
+              "name": "8h-12h",
+              "id": 16
+            },
+            {
+              "name": "15h-17h",
+              "id": 17
+            },
+            {
+              "name": "16h-18h",
+              "id": 18
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "03/08/2021",
+      "theater": [
+        {
+          "name": "BHD Hà Đông",
+          "showTime": [
+            {
+              "name": "8h-12h",
+              "id": 19
+            },
+            {
+              "name": "15h-17h",
+              "id": 20
+            },
+            {
+              "name": "16h-18h",
+              "id": 21
+            }
+          ]
+        },
+        {
+          "name": "BHD Hồ Gươm",
+          "showTime": [
+            {
+              "name": "8h-12h",
+              "id": 22
+            },
+            {
+              "name": "15h-17h",
+              "id": 23
+            },
+            {
+              "name": "16h-18h",
+              "id": 24
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "04/08/2021",
+      "theater": [
+        {
+          "name": "BHD Cầu Giấy",
+          "showTime": [
+            {
+              "name": "8h-12h",
+              "id": 25
+            },
+            {
+              "name": "15h-17h",
+              "id": 26
+            },
+            {
+              "name": "16h-18h",
+              "id": 27
+            }
+          ]
+        },
+        {
+          "name": "BHD Hà Đông",
+          "showTime": [
+            {
+              "name": "8h-12h",
+              "id": 28
+            },
+            {
+              "name": "15h-17h",
+              "id": 29
+            },
+            {
+              "name": "16h-18h",
+              "id": 30
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "day": "05/08/2021",
+      "theater": [
+        {
+          "name": "BHD Cầu Giấy",
+          "showTime": [
+            {
+              "name": "8h-12h",
+              "id": 31
+            },
+            {
+              "name": "15h-17h",
+              "id": 32
+            },
+            {
+              "name": "16h-18h",
+              "id": 33
+            }
+          ]
+        },
+        {
+          "name": "BHD Hà Đông",
+          "showTime": [
+            {
+              "name": "8h-12h",
+              "id": 34
+            },
+            {
+              "name": "15h-17h",
+              "id": 35
+            },
+            {
+              "name": "16h-18h",
+              "id": 36
+            }
+          ]
+        },
+        {
+          "name": "BHD Hồ Gươm",
+          "showTime": [
+            {
+              "name": "8h-12h",
+              "id": 37
+            },
+            {
+              "name": "15h-17h",
+              "id": 38
+            },
+            {
+              "name": "16h-18h",
+              "id": 39
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "movies": [
     {
       "name": "No time to die",
@@ -22,6 +872,7 @@
       "language": "English",
       "rate": "C12",
       "status": "showing",
+      "decs": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, dolorem iure tempora quam ab repudiandae dolor doloremque voluptate numquam tenetur fugiat quis rem provident blanditiis exercitationem veniam rerum, corporis sint.",
       "id": "1"
     },
     {
@@ -34,6 +885,7 @@
       "language": "English",
       "rate": "C12",
       "status": "showing",
+      "decs": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, dolorem iure tempora quam ab repudiandae dolor doloremque voluptate numquam tenetur fugiat quis rem provident blanditiis exercitationem veniam rerum, corporis sint.",
       "id": "2"
     },
     {
@@ -46,6 +898,7 @@
       "language": "English",
       "rate": "C12",
       "status": "showing",
+      "decs": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, dolorem iure tempora quam ab repudiandae dolor doloremque voluptate numquam tenetur fugiat quis rem provident blanditiis exercitationem veniam rerum, corporis sint.",
       "id": "3"
     },
     {
@@ -58,6 +911,7 @@
       "language": "English",
       "rate": "C12",
       "status": "showing",
+      "decs": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, dolorem iure tempora quam ab repudiandae dolor doloremque voluptate numquam tenetur fugiat quis rem provident blanditiis exercitationem veniam rerum, corporis sint.",
       "id": "4"
     },
     {
@@ -70,6 +924,7 @@
       "language": "English",
       "rate": "C12",
       "status": "showing",
+      "decs": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, dolorem iure tempora quam ab repudiandae dolor doloremque voluptate numquam tenetur fugiat quis rem provident blanditiis exercitationem veniam rerum, corporis sint.",
       "id": "5"
     },
     {
@@ -82,6 +937,7 @@
       "language": "English",
       "rate": "C12",
       "status": "showing",
+      "decs": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, dolorem iure tempora quam ab repudiandae dolor doloremque voluptate numquam tenetur fugiat quis rem provident blanditiis exercitationem veniam rerum, corporis sint.",
       "id": "6"
     },
     {
@@ -94,6 +950,7 @@
       "language": "English",
       "rate": "C12",
       "status": "showing",
+      "decs": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, dolorem iure tempora quam ab repudiandae dolor doloremque voluptate numquam tenetur fugiat quis rem provident blanditiis exercitationem veniam rerum, corporis sint.",
       "id": "7"
     },
     {
@@ -106,6 +963,7 @@
       "language": "English",
       "rate": "C12",
       "status": "showing",
+      "decs": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, dolorem iure tempora quam ab repudiandae dolor doloremque voluptate numquam tenetur fugiat quis rem provident blanditiis exercitationem veniam rerum, corporis sint.",
       "id": "8"
     },
     {

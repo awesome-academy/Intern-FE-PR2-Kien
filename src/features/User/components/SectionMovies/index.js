@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react"
 import { useSelector, useDispatch } from "react-redux"
-import { getMovies, moviesSelector } from "./../../userSlice.js"
+import { getMovies, moviesSelector } from "../../../../app/userSlice"
 import classNames from "classnames"
 import ListMovies from "../ListMovies/index.js"
 
@@ -19,12 +19,15 @@ function SectionMovies(props) {
       value: "preShowing"
     }
   ]
+
   const [showTitle, setShowTitle] = useState("showing")
   const dispatch = useDispatch()
   const movies = useSelector(moviesSelector)
+
   useEffect(() => {
     dispatch(getMovies({ status: showTitle }))
   }, [dispatch, showTitle])
+
   return (
     <div className="section-movie">
       <ul className="title">

@@ -4,17 +4,19 @@ import BannerCarousel from "../../components/BannerCarousel"
 import SectionMovies from "../../components/SectionMovies"
 import MainEvent from "../../components/MainEvent"
 import { useSelector, useDispatch } from "react-redux"
+
 import {
   bannerSelector,
   eventsSelector,
   getBanner,
   getEvent
-} from "./../../userSlice.js"
+} from "../../../../app/userSlice"
 
 function MainPage() {
   const dispatch = useDispatch()
   const banner = useSelector(bannerSelector)
   const events = useSelector(eventsSelector)
+
   useEffect(() => {
     dispatch(getBanner())
     dispatch(getEvent())
