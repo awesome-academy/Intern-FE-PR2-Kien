@@ -14,6 +14,7 @@ function Cinema(props) {
   const { id } = params
 
   useEffect(() => {
+    window.scrollTo(0, 0)
     dispatch(getCinema({ id: id }))
   }, [dispatch, id])
 

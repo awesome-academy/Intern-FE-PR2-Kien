@@ -141,61 +141,7 @@
       "id": 15
     }
   ],
-  "ordered": [
-    [
-      {
-        "row": "D",
-        "name": "D9",
-        "isEmpty": true,
-        "isNearScreen": false,
-        "isChecked": true
-      },
-      {
-        "row": "D",
-        "name": "D10",
-        "isEmpty": true,
-        "isNearScreen": false,
-        "isChecked": true
-      },
-      {
-        "row": "D",
-        "name": "D11",
-        "isEmpty": true,
-        "isNearScreen": false,
-        "isChecked": true
-      },
-      {
-        "row": "D",
-        "name": "D12",
-        "isEmpty": true,
-        "isNearScreen": false,
-        "isChecked": true
-      }
-    ],
-    [
-      {
-        "row": "G",
-        "name": "G7",
-        "isEmpty": true,
-        "isNearScreen": false,
-        "isChecked": true
-      },
-      {
-        "row": "G",
-        "name": "G8",
-        "isEmpty": true,
-        "isNearScreen": false,
-        "isChecked": true
-      },
-      {
-        "row": "G",
-        "name": "G9",
-        "isEmpty": true,
-        "isNearScreen": false,
-        "isChecked": true
-      }
-    ]
-  ],
+  "ordered": [],
   "order": [
     {
       "row": "A",
