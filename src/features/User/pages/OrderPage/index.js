@@ -9,13 +9,16 @@ import {
   eventsSelector,
   pushOrdered
 } from "../../../../app/userSlice"
-import { currentUserSelector } from "./../../../../app/authSlice"
+import { currentUserSelector } from "../../../../app/authSlice"
+
 import { useHistory } from "react-router-dom"
 import { useTranslation } from "react-i18next"
 import classNames from "classnames"
 import { toast } from "react-toastify"
 import { isEmpty } from "lodash"
 import MainEvent from "../../components/MainEvent"
+
+import { SIGN_IN_PATH, USER_PATH } from "./../../../../constant/route"
 
 function OrderPage(props) {
   const params = useParams()
@@ -26,6 +29,7 @@ function OrderPage(props) {
   const currentUser = useSelector(currentUserSelector)
   const history = useHistory()
   const dispatch = useDispatch()
+  const curentUser = useSelector(currentUserSelector)
 
   const ordered = []
   order.forEach(element => {
@@ -37,6 +41,7 @@ function OrderPage(props) {
   })
 
   useEffect(() => {
+    window.scrollTo(0, 0)
     dispatch(getEvent())
   }, [dispatch])
 
@@ -52,12 +57,22 @@ function OrderPage(props) {
     }
   }
 
-  const onHandleClickBuy = () => {
+  const onHandleClickBuy = data => {
+    const seatsInfo = ordered.map(item => {
+      return { row: item.row, col: item.name }
+    })
+    const result = {
+      payment: data,
+      seats: seatsInfo,
+      name: curentUser.name
+    }
+
     if (isEmpty(currentUser)) {
-      history.push("/user/account/signin")
+      history.push(SIGN_IN_PATH)
       toast.dark(`${t("mustLogin")}`)
     } else {
-      dispatch(pushOrdered(ordered))
+      dispatch(pushOrdered(result))
+      history.push(USER_PATH)
       toast.dark(`${t("orderSuccessful")}`)
     }
   }
@@ -116,9 +131,20 @@ function OrderPage(props) {
               ))}
             </div>
             {ordered.length && (
-              <button onClick={() => onHandleClickBuy()} className="order-btn">
-                {t("payment")}
-              </button>
+              <div>
+                <button
+                  onClick={() => onHandleClickBuy("Online")}
+                  className="order-btn me-3"
+                >
+                  {t("paymentOnline")}
+                </button>
+                <button
+                  onClick={() => onHandleClickBuy("Offline")}
+                  className="order-btn"
+                >
+                  {t("paymentOffline")}
+                </button>
+              </div>
             )}
           </div>
         </div>
