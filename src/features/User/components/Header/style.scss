@@ -16,6 +16,11 @@
       display: none;
     }
   }
+  .header-search-input {
+    @media ($sm) {
+      display: none;
+    }
+  }
   .header-avatar-user {
     border-radius: 50%;
     width: 50px;

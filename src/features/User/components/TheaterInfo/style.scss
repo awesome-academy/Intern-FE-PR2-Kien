@@ -1,0 +1,18 @@
+.TheaterInfo {
+  .title {
+    color: $yellow-color;
+    font-size: 2.5rem;
+  }
+  .theater-name {
+    font-size: 1.5rem;
+    color: $yellow-color;
+  }
+  .theater-info {
+    p {
+      margin: 0;
+      color: $darker-yellow-color;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+  }
+}

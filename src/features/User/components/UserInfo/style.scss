@@ -1,0 +1,21 @@
+.userInfo {
+  padding: 30px;
+  border: 1px solid $yellow-color;
+  border-radius: 20px;
+  background-color: $white-color;
+  ul {
+    list-style-type: none;
+    li {
+      padding: 5px 10px;
+      font-size: 1.5rem;
+      strong {
+        display: inline-block;
+        min-width: 100px;
+      }
+      img {
+        border-radius: 50%;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

@@ -7,8 +7,41 @@ const initialState = {
   events: [],
   detailMovie: {},
   calendar: [],
-  order: []
+  order: [],
+  movieByName: [],
+  news: [],
+  new: [],
+  cinemas: [],
+  cinema: []
 }
+
+export const getCinema = createAsyncThunk("user/getCinema", async data => {
+  const response = await userApi.getCinemas(data)
+  return response
+})
+
+export const getCinemas = createAsyncThunk("user/getCinemas", async data => {
+  const response = await userApi.getCinemas(data)
+  return response
+})
+
+export const getNew = createAsyncThunk("user/getNew", async data => {
+  const response = await userApi.getNews(data)
+  return response
+})
+
+export const getNews = createAsyncThunk("user/getNews", async data => {
+  const response = await userApi.getNews(data)
+  return response
+})
+
+export const getMoviesByName = createAsyncThunk(
+  "user/getMovieByName",
+  async data => {
+    const response = await userApi.getMovieByName(data)
+    return response
+  }
+)
 
 export const pushOrdered = createAsyncThunk("user/orderPush", async data => {
   await userApi.pushOrder(data)
@@ -63,6 +96,10 @@ export const userSlide = createSlice({
           }
         })
       })
+    },
+
+    clearMovieByName: state => {
+      state.movieByName = []
     }
   },
   extraReducers: {
@@ -90,7 +127,27 @@ export const userSlide = createSlice({
       state.order = action.payload
     },
 
-    [pushOrdered.fulfilled]: (state, action) => {}
+    [pushOrdered.fulfilled]: (state, action) => {},
+
+    [getMoviesByName.fulfilled]: (state, action) => {
+      state.movieByName = action.payload
+    },
+
+    [getNews.fulfilled]: (state, action) => {
+      state.news = action.payload
+    },
+
+    [getNew.fulfilled]: (state, action) => {
+      state.new = action.payload
+    },
+
+    [getCinemas.fulfilled]: (state, action) => {
+      state.cinemas = action.payload
+    },
+
+    [getCinema.fulfilled]: (state, action) => {
+      state.cinema = action.payload
+    }
   }
 })
 
@@ -103,5 +160,10 @@ export const eventsSelector = state => state.user.events
 export const detailMovieSelector = state => state.user.detailMovie
 export const calendarSelector = state => state.user.calendar
 export const orderSelector = state => state.user.order
+export const movieByNameSelector = state => state.user.movieByName
+export const newsSelector = state => state.user.news
+export const newSelector = state => state.user.new
+export const cinemasSelector = state => state.user.cinemas
+export const cinemaSelector = state => state.user.cinema
 
-export const { orderTicket } = userSlide.actions
+export const { orderTicket, clearMovieByName } = userSlide.actions

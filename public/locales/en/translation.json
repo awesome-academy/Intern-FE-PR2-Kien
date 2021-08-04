@@ -2,6 +2,7 @@
   "title": "Welcome to react using react-i18next",
   "buyTicket": "Buy ticket",
   "login": "Login",
+  "mainPage": "Main page",
   "logout": "Logout",
   "signin": "Sign in",
   "signup": "Sign up",
@@ -45,5 +46,13 @@
   "Regulation2": "The blue and gray umbrellas are seats you can reserve",
   "Regulation3": "The gray box is the seats near the screen",
   "selected": "Selected seat",
-  "payment": "Payment"
+  "payment": "Payment",
+  "promotion": "Promotion",
+  "news": "News",
+  "theaterInfo": "Theater info",
+  "address": "Address",
+  "phone": "Phone",
+  "room": "Room",
+  "tablePrice": "Table price",
+  "userInfo": "User info"
 }
