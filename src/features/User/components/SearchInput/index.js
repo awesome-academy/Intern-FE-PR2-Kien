@@ -6,7 +6,6 @@ import {
   movieByNameSelector,
   clearMovieByName
 } from "./../../../../app/userSlice"
-import { isEmpty } from "lodash"
 
 function SearchInput(props) {
   const dispatch = useDispatch()
