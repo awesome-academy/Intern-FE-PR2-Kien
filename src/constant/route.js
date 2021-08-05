@@ -20,4 +20,9 @@ export const GET_CALENDAR = "/calendar"
 export const GET_NEWS = "/news"
 export const GET_CINEMAS = "/cinemas"
 
+export const GET_USER = "/users"
+export const POST_USER = "/users"
+export const PUT_USER = "/users"
+export const DELETE_USER = "/users"
+
 export const PUSH_ORDER = "./ordered"
