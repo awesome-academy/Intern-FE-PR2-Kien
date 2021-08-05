@@ -6,10 +6,11 @@ import {
   getUsers,
   paramsSelector,
   deleteUser,
-  changeParams
+  changeParams,
+  changeUser
 } from "./../../../../app/adminSlice"
 
-function UserTable(props) {
+function UserTable({ setOpenForm }) {
   const dispatch = useDispatch()
   const params = useSelector(paramsSelector)
   const { _limit, _page } = params
@@ -50,6 +51,7 @@ function UserTable(props) {
 
   useEffect(() => {
     dispatch(getUsers(params))
+    return dispatch(changeUser(""))
   }, [dispatch, params])
 
   const onHandleClearFilter = () => {
@@ -63,6 +65,11 @@ function UserTable(props) {
 
   const onHandleDelete = id => {
     dispatch(deleteUser(id))
+  }
+
+  const onHandleEdit = user => {
+    setOpenForm(true)
+    dispatch(changeUser(user))
   }
 
   return (
@@ -115,24 +122,27 @@ function UserTable(props) {
             </Button>{" "}
           </td>
         </tr>
-        {users.map((user, index) => (
-          <tr key={user.id} className="text-center">
-            <th scope="row">{(_page - 1) * _limit + index + 1}</th>
-            <td>{user.fullName}</td>
-            <td>{user.email}</td>
-            <td>{user.gender}</td>
-            <td>
-              <Button
-                onClick={() => onHandleDelete(user.id)}
-                className="me-2"
-                color="warning"
-              >
-                Xoá
-              </Button>
-              <Button color="primary">Sửa</Button>
-            </td>
-          </tr>
-        ))}
+        {users &&
+          users.map((user, index) => (
+            <tr key={user.id} className="text-center">
+              <th scope="row">{(_page - 1) * _limit + index + 1}</th>
+              <td>{user.fullName}</td>
+              <td>{user.email}</td>
+              <td>{user.gender}</td>
+              <td>
+                <Button
+                  onClick={() => onHandleDelete(user.id)}
+                  className="me-2"
+                  color="warning"
+                >
+                  Xoá
+                </Button>
+                <Button onClick={() => onHandleEdit(user)} color="primary">
+                  Sửa
+                </Button>
+              </td>
+            </tr>
+          ))}
       </tbody>
     </Table>
   )
