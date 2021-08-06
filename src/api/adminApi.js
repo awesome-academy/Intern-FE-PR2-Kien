@@ -10,9 +10,17 @@ const adminApi = {
     const url = POST_USER
     return axiosClient.post(url, data)
   },
+  putUser: data => {
+    const url = `${POST_USER}/${data.id}`
+    return axiosClient.put(url, data)
+  },
   deleteUser: id => {
     const url = `${DELETE_USER}/${id}`
     return axiosClient.delete(url)
+  },
+  getDetailUser: id => {
+    const url = `${GET_USER}/${id}`
+    return axiosClient.get(url)
   }
 }
 

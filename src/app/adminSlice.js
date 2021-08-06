@@ -1,11 +1,22 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit"
 import adminApi from "../api/adminApi"
+import { nanoid } from "@reduxjs/toolkit"
 
 const initialState = {
   users: [],
   params: { _limit: 10, _page: 1 },
-  totalCount: 0
+  totalCount: 0,
+  editUser: ""
 }
+export const putUser = createAsyncThunk("admin/putUsers", async data => {
+  await adminApi.putUser(data)
+  return data
+})
+
+export const postUser = createAsyncThunk("admin/postUsers", async data => {
+  await adminApi.postUser(data)
+  return data
+})
 
 export const getUsers = createAsyncThunk("admin/getUsers", async params => {
   const response = await adminApi.getUsers({ ...params })
@@ -26,6 +37,10 @@ export const adminSlide = createSlice({
   reducers: {
     changeParams: (state, action) => {
       state.params = action.payload
+    },
+
+    changeUser: (state, action) => {
+      state.editUser = action.payload
     }
   },
   extraReducers: {
@@ -37,6 +52,18 @@ export const adminSlide = createSlice({
     [deleteUser.fulfilled]: (state, action) => {
       const userId = action.payload
       state.users = state.users.filter(user => user.id !== userId)
+    },
+
+    [postUser.fulfilled]: (state, action) => {
+      state.users.unshift({ ...action.payload, id: nanoid() })
+    },
+
+    [putUser.fulfilled]: (state, action) => {
+      const data = action.payload
+      state.users = state.users.map(user => {
+        if (user.id === data.id) user = data
+        return user
+      })
     }
   }
 })
@@ -47,5 +74,6 @@ export default adminReducer
 export const usersSelector = state => state.admin.users
 export const paramsSelector = state => state.admin.params
 export const totalCountSelector = state => state.admin.totalCount
+export const editUserSelector = state => state.admin.editUser
 
-export const { changeParams } = adminSlide.actions
+export const { changeParams, changeUser } = adminSlide.actions
