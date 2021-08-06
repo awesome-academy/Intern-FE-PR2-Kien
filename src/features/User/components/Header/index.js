@@ -6,6 +6,7 @@ import { currentUserSelector, signOut } from "../../../../app/authSlice"
 import classNames from "classnames"
 import firebase from "firebase"
 import { toast } from "react-toastify"
+import { useHistory } from "react-router"
 
 import SwitchLang from "./../SwitchLang"
 import logo from "./../../../../assets/images/logo.png"
@@ -21,6 +22,7 @@ import {
 import SearchInput from "../SearchInput"
 
 const Example = () => {
+  const history = useHistory()
   const [showMenu, setShowMenu] = useState(false)
   const { t } = useTranslation()
   const dispatch = useDispatch()
@@ -30,6 +32,7 @@ const Example = () => {
     localStorage.removeItem("firebaseui::rememberedAccounts")
     firebase.auth().signOut()
     toast.success("Đăng xuất thành công")
+    history.push("/user")
     dispatch(signOut())
   }
 

@@ -6,12 +6,9 @@ function SampleNextArrow(props) {
   const { className, style, onClick } = props
   return (
     <div
-      className={`${className} custom`}
+      className={`${className} custom-slick-next`}
       style={{
-        ...style,
-        display: "block",
-        transform: "translateX(-40px)",
-        fontSize: "3rem"
+        ...style
       }}
       onClick={onClick}
     />
@@ -22,12 +19,9 @@ function SamplePrevArrow(props) {
   const { className, style, onClick } = props
   return (
     <div
-      className={className}
+      className={`${className} custom-slick-prev`}
       style={{
-        ...style,
-        display: "block",
-        zIndex: "1000",
-        transform: "translateX(40px)"
+        ...style
       }}
       onClick={onClick}
     />
@@ -45,6 +39,8 @@ export default function ListMovies({ movies }) {
     speed: 500,
     slidesToShow: num,
     slidesToScroll: 1,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
     responsive: [
       {
         breakpoint: 1400,
@@ -69,16 +65,14 @@ export default function ListMovies({ movies }) {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          initialSlide: 2,
-          nextArrow: <SampleNextArrow />,
-          prevArrow: <SamplePrevArrow />
+          initialSlide: 2
         }
       }
     ]
   }
 
   return (
-    <div>
+    <div className="ListMovie">
       <Slider {...settings}>
         {movies.map((movie, index) => (
           <div

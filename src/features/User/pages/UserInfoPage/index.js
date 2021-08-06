@@ -1,6 +1,6 @@
 import React from "react"
 import UserInfo from "./../../components/UserInfo"
-import TheaterInfo from "./../../components/TheaterInfo"
+import OrderedTicket from "../../components/OrderedTicket"
 
 function UserInfoPage(props) {
   return (
@@ -11,7 +11,7 @@ function UserInfoPage(props) {
             <UserInfo />
           </div>
           <div className="col-12 col-lg-6 p-5">
-            <TheaterInfo />
+            <OrderedTicket />
           </div>
         </div>
       </div>

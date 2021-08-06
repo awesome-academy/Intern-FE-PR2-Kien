@@ -1,0 +1,15 @@
+.BannerCarousel {
+  .custom-slick-prev:before,
+  .custom-slick-next:before {
+    font-size: 5rem !important;
+    z-index: 1000 !important;
+  }
+  .custom-slick-prev {
+    transform: translateX(40px) !important;
+    z-index: 1000;
+  }
+  .custom-slick-next {
+    transform: translateX(-100px) !important;
+    z-index: 1000;
+  }
+}

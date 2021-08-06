@@ -53,7 +53,11 @@ function SearchInput(props) {
         <ul>
           {movieByName.map((item, index) => (
             <li key={index}>
-              <Link to={`/user/movie/${item.id}`}>{item.name}</Link>
+              {item.id === null ? (
+                <span className="no-result">{item.name}</span>
+              ) : (
+                <Link to={`/user/movie/${item.id}`}>{item.name}</Link>
+              )}
             </li>
           ))}
         </ul>

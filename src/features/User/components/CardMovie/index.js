@@ -12,7 +12,7 @@ const CardMovies = ({ movie }) => {
         <CardBody>
           <CardTitle tag="h5">{movie.name}</CardTitle>
           <Link
-            className="btn btn-secondary"
+            className="btn btn-success"
             to={{
               pathname: `${path}/movie/${movie.id}`
             }}

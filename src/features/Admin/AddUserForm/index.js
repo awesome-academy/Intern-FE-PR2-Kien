@@ -31,7 +31,7 @@ const AddUserForm = ({ setOpenForm }) => {
         })
       )
     }
-  }, [editUser])
+  }, [editUser, dispatch])
 
   const onHandleChange = e => {
     const { name, value } = e.target
@@ -101,4 +101,4 @@ const AddUserForm = ({ setOpenForm }) => {
   )
 }
 
-export default AddUserForm
+export default React.memo(AddUserForm)

@@ -43,7 +43,9 @@ function NewsPage(props) {
                     src={item.avatar}
                     alt="avatar"
                   />
-                  <Link to={`${NEWS_PATH}/${item.id}`} className="new-name">{ item.title }</Link>
+                  <Link to={`${NEWS_PATH}/${item.id}`} className="new-name">
+                    {item.title}
+                  </Link>
                 </div>
               </div>
             ))}

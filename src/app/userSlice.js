@@ -12,8 +12,13 @@ const initialState = {
   news: [],
   new: [],
   cinemas: [],
-  cinema: []
+  cinema: [],
+  ordered: []
 }
+export const getOrdered = createAsyncThunk("user/getOrdered", async () => {
+  const response = await userApi.getOrdered()
+  return response
+})
 
 export const getCinema = createAsyncThunk("user/getCinema", async data => {
   const response = await userApi.getCinemas(data)
@@ -89,7 +94,7 @@ export const userSlide = createSlice({
   reducers: {
     orderTicket: (state, action) => {
       const newCol = action.payload.name
-      state.order.forEach(element => {
+      state.order.seat.forEach(element => {
         element.col.forEach(item => {
           if (item.name === newCol) {
             item.isChecked = !item.isChecked
@@ -130,7 +135,11 @@ export const userSlide = createSlice({
     [pushOrdered.fulfilled]: (state, action) => {},
 
     [getMoviesByName.fulfilled]: (state, action) => {
-      state.movieByName = action.payload
+      action.payload.length === 0
+        ? (state.movieByName = [
+            { name: "Không tìm thấy kết quả nào", id: null }
+          ])
+        : (state.movieByName = action.payload)
     },
 
     [getNews.fulfilled]: (state, action) => {
@@ -147,6 +156,10 @@ export const userSlide = createSlice({
 
     [getCinema.fulfilled]: (state, action) => {
       state.cinema = action.payload
+    },
+
+    [getOrdered.fulfilled]: (state, action) => {
+      state.ordered = action.payload
     }
   }
 })
@@ -165,5 +178,6 @@ export const newsSelector = state => state.user.news
 export const newSelector = state => state.user.new
 export const cinemasSelector = state => state.user.cinemas
 export const cinemaSelector = state => state.user.cinema
+export const orderedSelector = state => state.user.ordered
 
 export const { orderTicket, clearMovieByName } = userSlide.actions

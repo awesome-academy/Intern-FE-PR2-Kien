@@ -1,12 +1,16 @@
-import { Form, Formik, FastField } from "formik"
 import React from "react"
+import { Form, Formik, FastField } from "formik"
 import InputField from "../../../components/CustomField/InputField"
 import { Button, FormGroup } from "reactstrap"
 import * as Yup from "yup"
 import { useTranslation } from "react-i18next"
+import firebase from "firebase"
+import { toast } from "react-toastify"
+import { useHistory } from "react-router-dom"
 
 function SignUp(props) {
   const { t } = useTranslation()
+  const history = useHistory()
   const initialValue = {
     firstName: "",
     lastName: "",
@@ -37,7 +41,19 @@ function SignUp(props) {
       .required(`${t("mustRequire")}`)
   })
 
-  const hanldeSubmit = value => {}
+  const hanldeSubmit = value => {
+    const { email, password } = value
+    firebase
+      .auth()
+      .createUserWithEmailAndPassword(email, password)
+      .then(userCredential => {
+        history.push("/user")
+      })
+      .catch(error => {
+        var errorMessage = error.message
+        toast.error(errorMessage)
+      })
+  }
 
   return (
     <div className="form-login">

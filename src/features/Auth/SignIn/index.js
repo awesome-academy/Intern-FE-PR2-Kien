@@ -6,6 +6,8 @@ import { Button, FormGroup } from "reactstrap"
 import firebase from "firebase"
 import * as Yup from "yup"
 import { useTranslation } from "react-i18next"
+import { useHistory } from "react-router-dom"
+import { toast } from "react-toastify"
 
 const uiConfig = {
   signInFlow: "popup",
@@ -15,6 +17,7 @@ const uiConfig = {
 
 function SignIn(props) {
   const { t } = useTranslation()
+  const history = useHistory()
   const initialValue = {
     userName: "",
     userPassword: ""
@@ -31,7 +34,19 @@ function SignIn(props) {
       .max(18, `${t("tooLong")}`)
   })
 
-  const hanldeSubmit = value => {}
+  const hanldeSubmit = value => {
+    const { userName, userPassword } = value
+    firebase
+      .auth()
+      .signInWithEmailAndPassword(userName, userPassword)
+      .then(userCredential => {
+        history.push("/user")
+      })
+      .catch(error => {
+        var errorMessage = error.message
+        toast.error(errorMessage)
+      })
+  }
 
   return (
     <div className="form-login">
@@ -62,7 +77,7 @@ function SignIn(props) {
                 firebaseAuth={firebase.auth()}
               />
               <FormGroup style={{ textAlign: "center" }}>
-                <Button>Submit</Button>
+                <Button type="submit">Submit</Button>
               </FormGroup>
             </Form>
           )

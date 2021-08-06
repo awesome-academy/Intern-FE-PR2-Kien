@@ -19,6 +19,7 @@ export const GET_MOVIES = "/movies"
 export const GET_CALENDAR = "/calendar"
 export const GET_NEWS = "/news"
 export const GET_CINEMAS = "/cinemas"
+export const GET_ORDERED = "/ordered"
 
 export const GET_USER = "/users"
 export const POST_USER = "/users"

@@ -5,12 +5,9 @@ function SampleNextArrow(props) {
   const { className, style, onClick } = props
   return (
     <div
-      className={`${className} custom`}
+      className={`${className} custom-slick-next`}
       style={{
-        ...style,
-        display: "block",
-        transform: "translateX(-40px)",
-        fontSize: "3rem"
+        ...style
       }}
       onClick={onClick}
     />
@@ -21,12 +18,9 @@ function SamplePrevArrow(props) {
   const { className, style, onClick } = props
   return (
     <div
-      className={className}
+      className={`${className} custom-slick-prev`}
       style={{
-        ...style,
-        display: "block",
-        zIndex: "1000",
-        transform: "translateX(40px)"
+        ...style
       }}
       onClick={onClick}
     />
@@ -45,7 +39,7 @@ export default function BannerCarousel({ banner }) {
   }
 
   return (
-    <div>
+    <div className="BannerCarousel">
       <Slider {...settings}>
         {banner &&
           banner.map((item, index) => (
