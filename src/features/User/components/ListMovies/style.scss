@@ -1,0 +1,21 @@
+.ListMovie {
+  .custom-slick-prev:before,
+  .custom-slick-next:before {
+    font-size: 3rem !important;
+    z-index: 1000 !important;
+  }
+  .custom-slick-prev {
+    transform: translateX(-20px) !important;
+    z-index: 1000;
+    @media ($sm) {
+      transform: translateX(50px) !important;
+    }
+  }
+  .custom-slick-next {
+    transform: translateX(-10px) !important;
+    z-index: 1000;
+    @media ($sm) {
+      transform: translateX(-70px) !important;
+    }
+  }
+}

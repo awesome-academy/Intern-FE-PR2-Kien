@@ -7,10 +7,16 @@ import {
   GET_MOVIES,
   PUSH_ORDER,
   GET_NEWS,
-  GET_CINEMAS
+  GET_CINEMAS,
+  GET_ORDERED
 } from "./../constant/route"
 
 const userApi = {
+  getOrdered: () => {
+    const url = GET_ORDERED
+    return axiosClient.get(url)
+  },
+
   getBanner: () => {
     const url = GET_BANNER
     return axiosClient.get(url)

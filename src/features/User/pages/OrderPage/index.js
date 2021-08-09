@@ -24,7 +24,9 @@ function OrderPage(props) {
   const params = useParams()
   const { t } = useTranslation()
   const { id } = params
-  const order = useSelector(orderSelector)
+  const inforOrder = useSelector(orderSelector)
+  const order = inforOrder.seat
+  const { name, time, place } = inforOrder
   const events = useSelector(eventsSelector)
   const currentUser = useSelector(currentUserSelector)
   const history = useHistory()
@@ -32,13 +34,14 @@ function OrderPage(props) {
   const curentUser = useSelector(currentUserSelector)
 
   const ordered = []
-  order.forEach(element => {
-    element.col.forEach(item => {
-      if (item.isChecked === true) {
-        ordered.push(item)
-      }
+  order &&
+    order.forEach(element => {
+      element.col.forEach(item => {
+        if (item.isChecked === true) {
+          ordered.push(item)
+        }
+      })
     })
-  })
 
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -62,6 +65,9 @@ function OrderPage(props) {
       return { row: item.row, col: item.name }
     })
     const result = {
+      moviename: name,
+      time: time,
+      place: place,
       payment: data,
       seats: seatsInfo,
       name: curentUser.name
@@ -114,10 +120,28 @@ function OrderPage(props) {
           </div>
           <div className="col-lg-6 col-12">
             <div className="order-title">{t("Regulation")}</div>
-            <div className="order-content">
-              <p>{t("Regulation1")}</p>
-              <p>{t("Regulation2")}</p>
-              <p>{t("Regulation3")}</p>
+            <div className="order-content d-flex flex-column align-items-center">
+              <div className="w-75">
+                <div className="d-flex">
+                  <div className="w-25 d-flex justify-content-center">
+                    <div className="order-box__col color-red me-2">R</div>
+                  </div>
+                  <p>{t("Regulation1")}</p>
+                </div>
+                <div className="d-flex">
+                  <div className="w-25 d-flex justify-content-center">
+                    <div className="order-box__col color-blue me-2">B</div>
+                    <div className="order-box__col color-gray me-2">G</div>
+                  </div>
+                  <p>{t("Regulation2")}</p>
+                </div>
+                <div className="d-flex">
+                  <div className="w-25 d-flex justify-content-center">
+                    <div className="order-box__col color-green me-2">G</div>
+                  </div>
+                  <p>{t("Regulation3")}</p>
+                </div>
+              </div>
             </div>
             <div className="order-title mt-3">{t("selected")}</div>
             <div className="d-flex justify-content-center">

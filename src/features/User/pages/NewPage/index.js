@@ -11,14 +11,19 @@ function NewPage(props) {
   const { id } = params
   useEffect(() => {
     dispatch(getNew({ id: id }))
-  }, [dispatch])
+  }, [dispatch, id])
   return (
     <div>
       <div className="container p-5">
         {detailNew && (
           <div>
             <h1>{detailNew.title}</h1>
-            <div>{detailNew.content}</div>
+            <div className="row">
+              <div className="col-8">{detailNew.content}</div>
+              <div className="col-4">
+                <img className="w-100" src={detailNew.avatar} alt="avatar" />
+              </div>
+            </div>
           </div>
         )}
       </div>

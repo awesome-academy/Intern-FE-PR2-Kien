@@ -148,4 +148,4 @@ function UserTable({ setOpenForm }) {
   )
 }
 
-export default UserTable
+export default React.memo(UserTable)

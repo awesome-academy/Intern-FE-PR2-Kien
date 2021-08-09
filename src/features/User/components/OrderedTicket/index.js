@@ -5,7 +5,6 @@ import { getOrdered, orderedSelector } from "./../../../../app/userSlice"
 function OrderedTicket(props) {
   const dispatch = useDispatch()
   const ordered = useSelector(orderedSelector)
-  console.log(ordered)
 
   useEffect(() => {
     dispatch(getOrdered())
