@@ -4,6 +4,7 @@
   background: linear-gradient(0deg, $black-color 0%, $lighter-back-color 100%);
   color: $white-color;
   position: relative;
+  z-index: 1000;
   .header-logo {
     width: 5rem;
     height: 5rem;
@@ -51,19 +52,18 @@
     position: absolute;
     left: 0%;
     bottom: 0%;
-    transform: translateY(100%);
-    z-index: 1000;
+    z-index: 100;
     display: flex;
     flex-direction: column;
     width: 100%;
     max-width: 300px;
-    background-color: $gray-color;
+    background-color: $black-color;
+    border-radius: 0 0 30px 0;
     @media ($sm) {
       max-width: 100%;
     }
     &-selected {
-      background-color: $darket-gray-color;
-      color: $white-color;
+      color: $yellow-color !important;
       font-weight: bold;
     }
     &-item {
@@ -71,12 +71,21 @@
       text-transform: uppercase;
       color: $white-color;
       padding: 10px 20px;
+      &:last-child {
+        border-radius: 0 0 30px 0;
+      }
       &:hover {
-        background-color: $darket-gray-color;
+        background-color: $darker-gray-color;
         color: $white-color;
         font-weight: bold;
       }
     }
+  }
+  .open-menu {
+    animation: showMenu 0.4s ease-in forwards;
+  }
+  .close-menu {
+    animation: closeMenu 0.4s ease-in forwards;
   }
   &__icon-menu {
     width: 4rem;

@@ -8,7 +8,15 @@ function UserInfo(props) {
     <div className="userInfo">
       <ul>
         <li className="d-flex justify-content-center">
-          <img src={curentUser.urlAvatar} alt="avatar" />
+          {curentUser.urlAvatar ? (
+            <img src={curentUser.urlAvatar} alt="avatar" />
+          ) : (
+            <img
+              className="w-25"
+              src="https://www.pphfoundation.ca/wp-content/uploads/2018/05/default-avatar.png"
+              alt="avatar"
+            />
+          )}
         </li>
         <li>
           <strong>Tên :</strong> {curentUser.name}

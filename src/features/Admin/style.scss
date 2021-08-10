@@ -1,0 +1,44 @@
+.Admin {
+  .menu {
+    border-right: 1px solid $lighter-gray-color;
+    width: 100%;
+    height: 100vh;
+    padding: 40px 0;
+    .user {
+      margin: 0 20px 20px 20px;
+      padding: 15px;
+      border-radius: 20px;
+      background-color: $lighter-gray-color;
+      img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+      }
+      span {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-left: 20px;
+      }
+    }
+  }
+  .list-menu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30%;
+    .item-selected {
+      background-color: $lighter-green-color;
+      color: $darker-green-color !important;
+      border-right: 4px solid $darker-green-color;
+    }
+    .item {
+      cursor: pointer;
+      text-decoration: none;
+      color: $gray-color;
+      padding: 10px 30px;
+      font-size: 1.2rem;
+      i {
+        margin: 10px;
+      }
+    }
+  }
+}

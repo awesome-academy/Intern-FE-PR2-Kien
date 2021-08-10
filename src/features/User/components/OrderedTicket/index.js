@@ -1,10 +1,16 @@
 import React, { useEffect } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { getOrdered, orderedSelector } from "./../../../../app/userSlice"
+import { currentUserSelector } from "../../../../app/authSlice"
+import classNames from "classnames"
 
 function OrderedTicket(props) {
   const dispatch = useDispatch()
-  const ordered = useSelector(orderedSelector)
+  const totalOrdered = useSelector(orderedSelector)
+  const curentUser = useSelector(currentUserSelector)
+  const ordered = totalOrdered.filter(
+    element => element.email === curentUser.email
+  )
 
   useEffect(() => {
     dispatch(getOrdered())
@@ -14,7 +20,15 @@ function OrderedTicket(props) {
       <h1 className="text-center mb-4">Vé đã đặt</h1>
       {ordered &&
         ordered.map((order, index) => (
-          <div key={index} className="box mb-4">
+          <div
+            className={classNames(
+              "box mb-4",
+              { "border-pending": order.status === "pending" },
+              { "border-active": order.status === "active" },
+              { "border-banned": order.status === "banned" }
+            )}
+            key={index}
+          >
             <div className="movieName">{order.place}</div>
             <ul>
               <li>

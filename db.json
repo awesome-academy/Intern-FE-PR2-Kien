@@ -13,30 +13,6 @@
   ],
   "users": [
     {
-      "id": 53,
-      "fullName": "Alwyn Labet",
-      "email": "alabet1g@ft.com",
-      "gender": "Male"
-    },
-    {
-      "id": 55,
-      "fullName": "Keir Hurle",
-      "email": "khurle1i@dell.com",
-      "gender": "Male"
-    },
-    {
-      "id": 56,
-      "fullName": "Elli Cristoferi",
-      "email": "ecristoferi1j@craigslist.org",
-      "gender": "Female"
-    },
-    {
-      "id": 57,
-      "fullName": "Nike Nathan",
-      "email": "nnathan1k@usa.gov",
-      "gender": "Female"
-    },
-    {
       "id": 58,
       "fullName": "Jorrie Wooffitt",
       "email": "jwooffitt1l@domainmarket.com",
@@ -981,11 +957,499 @@
       "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi deleniti delectus ipsum dolor sit amet consectetur adipisicing elit. Modi deleniti delectus et a recusandae, quos blanditiis vero magni ut, esse, maxime nemo voluptatibus mollitia voluptatum labore impedit. Ut, perspiciatis laudantium?Lorem ipsum dolor sit amet consectetur adipisicing elit. esse, maxime nemo voluptatibus mollitia voluptatum labore impedit. Ut, perspiciatis laudantium?Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi deleniti delectus et a recusandae, quos blanditiis vero magni ut, esse, maxime nemo voluptatibus mollitia voluptatum labore impedit. Ut, perspiciatis laudantium?Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi deleniti delectus et a recusandae, quos blanditiis vero magni ut, esse, maxime nemo voluptatibus mollitia voluptatum labore impedit. Ut, perspiciatis laudantium?Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi deleniti delectus et a recusandae, quos blanditiis vero magni ut, esse, maxime nemo voluptatibus mollitia voluptatum labore impedit. Ut, perspiciatis laudantium?Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi deleniti delectus et a recusandae, quos blanditiis vero magni ut, esse, maxime nemo voluptatibus mollitia voluptatum labore impedit. Ut, perspiciatis laudantium?Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi deleniti delectus et a recusandae, quos blanditiis vero magni ut, esse, maxime nemo voluptatibus mollitia voluptatum labore impedit. Ut, perspiciatis laudantium?Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi deleniti delectus et a recusandae, quos blanditiis vero magni ut, esse, maxime nemo voluptatibus mollitia voluptatum labore impedit. Ut, perspiciatis laudantium?"
     }
   ],
-  "ordered": [],
+  "ordered": [
+    {
+      "status": "active",
+      "moviename": "The baby Boss",
+      "time": "20h-21h30",
+      "place": "BHD Hà Đông",
+      "payment": "Online",
+      "seats": [
+        {
+          "row": "H",
+          "col": "H10"
+        }
+      ],
+      "email": "sayohyeah17@gmail.com",
+      "id": 1
+    },
+    {
+      "status": "banned",
+      "moviename": "The baby Boss",
+      "time": "20h-21h30",
+      "place": "BHD Cầu Giấy",
+      "payment": "Offline",
+      "seats": [
+        {
+          "row": "F",
+          "col": "F6"
+        }
+      ],
+      "email": "a@gmail.com",
+      "id": 2
+    },
+    {
+      "status": "active",
+      "moviename": "No time to die",
+      "time": "20h-21h30",
+      "place": "BHD Hồ Gươm",
+      "payment": "Offline",
+      "seats": [
+        {
+          "row": "A",
+          "col": "A6"
+        }
+      ],
+      "email": "b@gmail.com",
+      "id": 3
+    },
+    {
+      "status": "banned",
+      "moviename": "No time to die",
+      "time": "20h-21h30",
+      "place": "BHD Hà Đông",
+      "payment": "Offline",
+      "seats": [
+        {
+          "row": "B",
+          "col": "B1"
+        },
+        {
+          "row": "B",
+          "col": "B2"
+        }
+      ],
+      "email": "c@gmail.com",
+      "id": 4
+    },
+    {
+      "status": "pending",
+      "moviename": "No time to die",
+      "time": "20h-21h30",
+      "place": "BHD Cầu Giấy",
+      "payment": "Offline",
+      "seats": [
+        {
+          "row": "A",
+          "col": "A3"
+        },
+        {
+          "row": "A",
+          "col": "A4"
+        }
+      ],
+      "email": "a@gmail.com",
+      "id": 5
+    },
+    {
+      "status": "banned",
+      "moviename": "No time to die",
+      "time": "20h-21h30",
+      "place": "BHD Hồ Gươm",
+      "payment": "Offline",
+      "seats": [
+        {
+          "row": "C",
+          "col": "C1"
+        },
+        {
+          "row": "C",
+          "col": "C2"
+        }
+      ],
+      "email": "c@gmail.com",
+      "id": 6
+    },
+    {
+      "status": "active",
+      "moviename": "Shang-chi",
+      "time": "20h-21h30",
+      "place": "BHD Hà Đông",
+      "payment": "Offline",
+      "seats": [
+        {
+          "row": "C",
+          "col": "C4"
+        },
+        {
+          "row": "C",
+          "col": "C5"
+        }
+      ],
+      "email": "sayohyeah17@gmail.com",
+      "id": 7
+    },
+    {
+      "status": "active",
+      "moviename": "Shang-chi",
+      "time": "20h-21h30",
+      "place": "BHD Cầu Giấy",
+      "payment": "Offline",
+      "seats": [
+        {
+          "row": "D",
+          "col": "D7"
+        }
+      ],
+      "email": "nam@gmail.com",
+      "id": 8
+    },
+    {
+      "status": "banned",
+      "moviename": "Shang-chi",
+      "time": "20h-21h30",
+      "place": "BHD Hồ Gươm",
+      "payment": "Offline",
+      "seats": [
+        {
+          "row": "F",
+          "col": "F3"
+        },
+        {
+          "row": "F",
+          "col": "F4"
+        },
+        {
+          "row": "F",
+          "col": "F5"
+        }
+      ],
+      "email": "thang@gmail.com",
+      "id": 9
+    },
+    {
+      "status": "banned",
+      "moviename": "Spider man",
+      "time": "20h-21h30",
+      "place": "BHD Hà Đông",
+      "payment": "Offline",
+      "seats": [
+        {
+          "row": "F",
+          "col": "F5"
+        },
+        {
+          "row": "F",
+          "col": "F6"
+        }
+      ],
+      "email": "b@gmail.com",
+      "id": 10
+    },
+    {
+      "status": "pending",
+      "moviename": "Spider man",
+      "time": "20h-21h30",
+      "place": "BHD Cầu Giấy",
+      "payment": "Online",
+      "seats": [
+        {
+          "row": "F",
+          "col": "F5"
+        },
+        {
+          "row": "F",
+          "col": "F6"
+        }
+      ],
+      "email": "nam@gmail.com",
+      "id": 11
+    },
+    {
+      "status": "pending",
+      "moviename": "Spider man",
+      "time": "20h-21h30",
+      "place": "BHD Hồ Gươm",
+      "payment": "Online",
+      "seats": [
+        {
+          "row": "F",
+          "col": "F5"
+        },
+        {
+          "row": "F",
+          "col": "F6"
+        }
+      ],
+      "email": "thang@gmail.com",
+      "id": 12
+    },
+    {
+      "status": "pending",
+      "moviename": "Spider man",
+      "time": "20h-21h30",
+      "place": "BHD Hà Đông",
+      "payment": "Offline",
+      "seats": [
+        {
+          "row": "F",
+          "col": "F5"
+        },
+        {
+          "row": "F",
+          "col": "F6"
+        }
+      ],
+      "email": "c@gmail.com",
+      "id": 13
+    },
+    {
+      "status": "pending",
+      "moviename": "Last night in soho",
+      "time": "20h-21h30",
+      "place": "BHD Cầu Giấy",
+      "payment": "Offline",
+      "seats": [
+        {
+          "row": "F",
+          "col": "F5"
+        },
+        {
+          "row": "F",
+          "col": "F6"
+        }
+      ],
+      "email": "nam@gmail.com",
+      "id": 14
+    },
+    {
+      "status": "pending",
+      "moviename": "Last night in soho",
+      "time": "20h-21h30",
+      "place": "BHD Hồ Gươm",
+      "payment": "Online",
+      "seats": [
+        {
+          "row": "F",
+          "col": "F5"
+        },
+        {
+          "row": "F",
+          "col": "F6"
+        }
+      ],
+      "email": "kiennguyen@gmail.com",
+      "id": 15
+    },
+    {
+      "status": "pending",
+      "moviename": "Last night in soho",
+      "time": "20h-21h30",
+      "place": "BHD Hà Đông",
+      "payment": "Online",
+      "seats": [
+        {
+          "row": "F",
+          "col": "F5"
+        },
+        {
+          "row": "F",
+          "col": "F6"
+        }
+      ],
+      "email": "namnguyen@gmail.com",
+      "id": 16
+    },
+    {
+      "status": "pending",
+      "moviename": "Last night in soho",
+      "time": "20h-21h30",
+      "place": "BHD Cầu Giấy",
+      "payment": "Offline",
+      "seats": [
+        {
+          "row": "F",
+          "col": "F5"
+        },
+        {
+          "row": "F",
+          "col": "F6"
+        }
+      ],
+      "email": "thang@gmail.com",
+      "id": 17
+    },
+    {
+      "status": "pending",
+      "moviename": "Enteral",
+      "time": "20h-21h30",
+      "place": "BHD Hồ Gươm",
+      "payment": "Offline",
+      "seats": [
+        {
+          "row": "F",
+          "col": "F5"
+        },
+        {
+          "row": "F",
+          "col": "F6"
+        }
+      ],
+      "email": "sayohyeah17@gmail.com",
+      "id": 18
+    },
+    {
+      "status": "pending",
+      "moviename": "Enteral",
+      "time": "20h-21h30",
+      "place": "BHD Hà Đông",
+      "payment": "Online",
+      "seats": [
+        {
+          "row": "F",
+          "col": "F5"
+        },
+        {
+          "row": "F",
+          "col": "F6"
+        }
+      ],
+      "email": "kiennguyen@gmail.com",
+      "id": 19
+    },
+    {
+      "status": "pending",
+      "moviename": "Enteral",
+      "time": "20h-21h30",
+      "place": "BHD Cầu Giấy",
+      "payment": "Offline",
+      "seats": [
+        {
+          "row": "F",
+          "col": "F5"
+        },
+        {
+          "row": "F",
+          "col": "F6"
+        }
+      ],
+      "email": "nguyennam@gmail.com",
+      "id": 20
+    },
+    {
+      "status": "pending",
+      "moviename": "Venom",
+      "time": "20h-21h30",
+      "place": "BHD Hồ Gươm",
+      "payment": "Offline",
+      "seats": [
+        {
+          "row": "F",
+          "col": "F5"
+        },
+        {
+          "row": "F",
+          "col": "F6"
+        }
+      ],
+      "email": "nguyenthang@gmail.com",
+      "id": 21
+    },
+    {
+      "status": "pending",
+      "moviename": "Venom",
+      "time": "20h-21h30",
+      "place": "BHD Hà Đông",
+      "payment": "Offline",
+      "seats": [
+        {
+          "row": "F",
+          "col": "F5"
+        },
+        {
+          "row": "F",
+          "col": "F6"
+        }
+      ],
+      "email": "vanhung@gmail.com",
+      "id": 22
+    },
+    {
+      "moviename": "Venom",
+      "time": "20h-21h30",
+      "place": "BHD Cầu Giấy",
+      "payment": "Offline",
+      "seats": [
+        {
+          "row": "F",
+          "col": "F5"
+        },
+        {
+          "row": "F",
+          "col": "F6"
+        },
+        {
+          "row": "F",
+          "col": "F7"
+        }
+      ],
+      "email": "sayohyeah17@gmail.com",
+      "id": 23,
+      "status": "active"
+    },
+    {
+      "moviename": "Venom",
+      "time": "20h-21h30",
+      "place": "BHD Cầu Giấy",
+      "payment": "Offline",
+      "seats": [
+        {
+          "row": "A",
+          "col": "A1"
+        },
+        {
+          "row": "A",
+          "col": "A2"
+        },
+        {
+          "row": "A",
+          "col": "A3"
+        }
+      ],
+      "email": "test@gmail.com",
+      "status": "active",
+      "id": 24
+    },
+    {
+      "moviename": "Venom",
+      "time": "20h-21h30",
+      "place": "BHD Cầu Giấy",
+      "payment": "Offline",
+      "seats": [
+        {
+          "row": "D",
+          "col": "D1"
+        },
+        {
+          "row": "D",
+          "col": "D2"
+        },
+        {
+          "row": "D",
+          "col": "D3"
+        },
+        {
+          "row": "D",
+          "col": "D4"
+        },
+        {
+          "row": "D",
+          "col": "D5"
+        },
+        {
+          "row": "D",
+          "col": "D6"
+        }
+      ],
+      "email": "test@gmail.com",
+      "status": "banned",
+      "id": 25
+    }
+  ],
   "order": {
-    "name": "The baby Boss",
+    "name": "Venom",
     "time": "20h-21h30",
-    "place": "BHD Hà Đông",
+    "place": "BHD Cầu Giấy",
     "seat": [
       {
         "row": "A",

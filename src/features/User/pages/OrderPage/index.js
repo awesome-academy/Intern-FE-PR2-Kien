@@ -1,5 +1,5 @@
 import React, { useEffect } from "react"
-import { useParams } from "react-router-dom"
+import { useParams, useLocation } from "react-router-dom"
 import { useDispatch, useSelector } from "react-redux"
 import {
   getOrder,
@@ -22,6 +22,7 @@ import { SIGN_IN_PATH, USER_PATH } from "./../../../../constant/route"
 
 function OrderPage(props) {
   const params = useParams()
+  const location = useLocation()
   const { t } = useTranslation()
   const { id } = params
   const inforOrder = useSelector(orderSelector)
@@ -70,10 +71,12 @@ function OrderPage(props) {
       place: place,
       payment: data,
       seats: seatsInfo,
-      name: curentUser.name
+      email: curentUser.email,
+      status: "pending"
     }
 
     if (isEmpty(currentUser)) {
+      localStorage.setItem("oldPath", location.pathname)
       history.push(SIGN_IN_PATH)
       toast.dark(`${t("mustLogin")}`)
     } else {

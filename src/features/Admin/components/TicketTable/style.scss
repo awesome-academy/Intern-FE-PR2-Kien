@@ -1,0 +1,44 @@
+.TicketTable {
+  .status {
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 10px;
+    &-banned {
+      color: $red-color;
+      background-color: $lighter-red-color;
+    }
+    &-active {
+      color: $darker-green-color;
+      background-color: $lighter-green-color;
+    }
+    &-pending {
+      color: $gray-color;
+      background-color: $lighter-gray-color;
+    }
+    &:hover .actions {
+      display: flex;
+      animation: showActions 0.3s ease-in forwards;
+    }
+    .actions {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      bottom: 0%;
+      right: 0%;
+      .action {
+        margin: 2px;
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        font-size: 1rem;
+        border-radius: 50%;
+        &:hover {
+          transform: scale(1.2);
+          transition: all 0.4s;
+        }
+      }
+    }
+  }
+}

@@ -1,5 +1,8 @@
 export const ROOT_PATH = "/"
 export const ADMIN_PATH = "/admin"
+export const ADMIN_USER_PATH = "/admin/user"
+export const ADMIN_TICKET_PATH = "/admin/ticket"
+export const ADMIN_LOGIN_PATH = "/admin/login"
 export const USER_PATH = "/user"
 export const AUTHEN_PATH = "/user/account"
 export const SIGN_IN_PATH = "/user/account/signin"
@@ -20,6 +23,8 @@ export const GET_CALENDAR = "/calendar"
 export const GET_NEWS = "/news"
 export const GET_CINEMAS = "/cinemas"
 export const GET_ORDERED = "/ordered"
+
+export const GET_TICKET = "/ordered"
 
 export const GET_USER = "/users"
 export const POST_USER = "/users"
