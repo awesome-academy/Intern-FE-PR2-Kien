@@ -9,13 +9,16 @@ import { useTranslation } from "react-i18next"
 import { useHistory } from "react-router-dom"
 import { toast } from "react-toastify"
 
+const oldPath = localStorage.getItem("oldPath")
+
 const uiConfig = {
   signInFlow: "popup",
-  signInSuccessUrl: "/",
+  signInSuccessUrl: oldPath ? oldPath : "/",
   signInOptions: [firebase.auth.GoogleAuthProvider.PROVIDER_ID]
 }
 
 function SignIn(props) {
+  const oldPath = localStorage.getItem("oldPath")
   const { t } = useTranslation()
   const history = useHistory()
   const initialValue = {
@@ -40,7 +43,7 @@ function SignIn(props) {
       .auth()
       .signInWithEmailAndPassword(userName, userPassword)
       .then(userCredential => {
-        history.push("/user")
+        history.push(oldPath ? oldPath : "/")
       })
       .catch(error => {
         var errorMessage = error.message

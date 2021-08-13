@@ -10,7 +10,6 @@ function MainPage(props) {
   return (
     <div className="MainAdminPage">
       <div className="container">
-        <h1 className="text-center">Quản lý user</h1>
         <div className="row">
           <div>
             <Button onClick={() => setOpenForm(true)} color="primary">

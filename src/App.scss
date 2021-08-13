@@ -1,3 +1,4 @@
+@import "./assets/utils/animation";
 @import "./assets/utils/_mixin.scss";
 @import "./assets/utils/_reset.scss";
 @import "./assets/utils/_variables.scss";
@@ -21,3 +22,6 @@
 @import "./features/User/pages/Cinema/style.scss";
 @import "./features/User/components/BannerCarousel/style.scss";
 @import "./features/User/components/ListMovies/style.scss";
+@import "./features/Admin/style.scss";
+@import "./features/Admin/pages/TicketPage/style.scss";
+@import "./features/Admin/components/TicketTable/style.scss";

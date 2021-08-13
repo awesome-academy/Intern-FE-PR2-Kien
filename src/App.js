@@ -4,8 +4,8 @@ import firebase from "firebase"
 import { toast } from "react-toastify"
 import { Suspense } from "react"
 import { ToastContainer } from "react-toastify"
-import { useDispatch, useSelector } from "react-redux"
-import { currentUserSelector } from "./app/authSlice"
+import { useDispatch } from "react-redux"
+import ProtectedRoute from "./components/ProtectRoute"
 import {
   BrowserRouter as Router,
   Switch,
@@ -35,7 +35,6 @@ firebase.initializeApp(config)
 export default function App() {
   const dispatch = useDispatch()
   const { t } = useTranslation()
-  const curentUser = useSelector(currentUserSelector)
 
   useEffect(() => {
     const unregisterAuthObserver = firebase
@@ -70,11 +69,13 @@ export default function App() {
           <Redirect exact from={ROOT_PATH} to={USER_PATH} />
 
           <Route path={USER_PATH} component={User} />
-          {curentUser.id ? (
-            <Route path={ADMIN_PATH} component={Admin} />
-          ) : (
-            <Route component={NotFound} />
-          )}
+          <ProtectedRoute
+            isAuthenticated={
+              localStorage.getItem("rememberedUser") ? true : false
+            }
+            path={ADMIN_PATH}
+            component={Admin}
+          />
           <Route component={NotFound} />
         </Switch>
       </Router>

@@ -1,10 +1,18 @@
 .OrderedTicket {
   color: $white-color;
+  .border-pending {
+    border-radius: 4px solid $darker-gray-color;
+  }
+  .border-active {
+    border: 4px solid $darker-green-color;
+  }
+  .border-banned {
+    border: 4px solid $red-color;
+  }
   .box {
-    padding: 20px;
+    padding: 10px;
     background-color: $black-color;
     border-radius: 5px;
-    border: 1px solid $darker-yellow-color;
   }
   .movieName {
     font-size: 2rem;

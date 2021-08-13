@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react"
-import { Table, Button, Input } from "reactstrap"
+import { Table, Button, Input, Modal, ModalBody, ModalFooter } from "reactstrap"
 import { useDispatch, useSelector } from "react-redux"
 import {
   usersSelector,
@@ -12,6 +12,10 @@ import {
 
 function UserTable({ setOpenForm }) {
   const dispatch = useDispatch()
+  const [modal, setModal] = useState({
+    open: false,
+    id: ""
+  })
   const params = useSelector(paramsSelector)
   const { _limit, _page } = params
   const users = useSelector(usersSelector)
@@ -64,7 +68,15 @@ function UserTable({ setOpenForm }) {
   }
 
   const onHandleDelete = id => {
-    dispatch(deleteUser(id))
+    setModal({
+      open: true,
+      id: id
+    })
+  }
+
+  const onAcceptDelete = () => {
+    dispatch(deleteUser(modal.id))
+    setModal({ ...modal, open: false })
   }
 
   const onHandleEdit = user => {
@@ -144,6 +156,28 @@ function UserTable({ setOpenForm }) {
             </tr>
           ))}
       </tbody>
+      <Modal
+        toggle={() => setModal({ ...modal, open: false })}
+        isOpen={modal.open}
+      >
+        <ModalBody>
+          <h5>
+            Bạn chắc chắn muốn xoá người dùng này ? <br /> Việc làm này không
+            thể hoàn tác
+          </h5>
+        </ModalBody>
+        <ModalFooter>
+          <Button onClick={() => onAcceptDelete()} color="primary">
+            Đồng ý
+          </Button>
+          <Button
+            color="primary"
+            onClick={() => setModal({ ...modal, open: false })}
+          >
+            Quay lại
+          </Button>
+        </ModalFooter>
+      </Modal>
     </Table>
   )
 }

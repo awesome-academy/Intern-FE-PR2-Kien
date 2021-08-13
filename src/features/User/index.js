@@ -1,7 +1,5 @@
 import React from "react"
 import { Switch, Route } from "react-router-dom"
-import { useSelector } from "react-redux"
-import { currentUserSelector } from "../../app/authSlice"
 
 import Header from "./components/Header"
 import Footer from "./components/Footer"
@@ -26,9 +24,9 @@ import {
 } from "./../../constant/route"
 import Cinemas from "./pages/Cinemas"
 import Cinema from "./pages/Cinema"
+import ProtectedRoute from "../../components/ProtectRoute"
 
 export default function User() {
-  const currentUser = useSelector(currentUserSelector)
   return (
     <div>
       <Header />
@@ -41,12 +39,14 @@ export default function User() {
           <Route path={AUTHEN_PATH} component={Authen} />
           <Route path={NEW_PATH} component={NewPage} />
           <Route path={CINEMA_PATH} component={Cinema} />
-          {currentUser.id && (
-            <>
-              <Route path={ORDER_PATH} component={OrderPage} />
-              <Route path={USER_INFO_PATH} component={UserInfoPage} />
-            </>
-          )}
+          <Route path={ORDER_PATH} component={OrderPage} />
+          <ProtectedRoute
+            isAuthenticated={
+              localStorage.getItem("rememberedUser") ? true : false
+            }
+            path={USER_INFO_PATH}
+            component={UserInfoPage}
+          />
           <Route component={NotFound} />
         </Switch>
       </div>

@@ -2,25 +2,37 @@
   position: relative;
   margin-left: 10px;
   input {
-    padding: 2px 10px;
+    padding: 5px 20px;
     border-radius: 5px;
+    font-size: 1rem;
+    border: 2px solid $yellow-color;
+    border-radius: 20px;
+    width: 300px;
+    color: gray;
     &:focus {
       outline: none;
     }
   }
   ul {
     position: absolute;
-    top: 100%;
-    left: 0px;
+    top: 110%;
+    left: 20px;
     z-index: 100;
     background-color: $white-color;
+    color: $gray-color;
+    font-size: 1rem;
     list-style-type: none;
     padding: 0;
-    border-radius: 0 0 5px 5px;
-    border: 1px solid $black-color;
+    border-radius: 0 0 15px 15px;
+    width: 260px;
+    box-shadow: 0 0px 5px 0px $darker-yellow-color;
+
     li {
+      &:last-child {
+        border-radius: 0 0 15px 15px;
+      }
       &:hover {
-        background-color: $darker-yellow-color;
+        background-color: $yellow-color;
         color: $white-color;
       }
       padding: 5px 20px;
@@ -35,6 +47,6 @@
     }
   }
   .no-result {
-    color: $red-color;
+    color: $darker-yellow-color;
   }
 }

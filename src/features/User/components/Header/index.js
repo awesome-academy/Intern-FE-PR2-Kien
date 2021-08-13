@@ -1,9 +1,8 @@
-import React, { useState } from "react"
-import { NavLink, Link } from "react-router-dom"
+import React from "react"
+import { Link } from "react-router-dom"
 import { useTranslation } from "react-i18next"
 import { useDispatch, useSelector } from "react-redux"
 import { currentUserSelector, signOut } from "../../../../app/authSlice"
-import classNames from "classnames"
 import firebase from "firebase"
 import { toast } from "react-toastify"
 import { useHistory } from "react-router"
@@ -14,22 +13,22 @@ import lineHeader from "./../../../../assets/images/line-header1.png"
 import {
   SIGN_IN_PATH,
   USER_INFO_PATH,
-  USER_PATH,
-  NEWS_PATH,
-  CINEMAS_PATH
+  USER_PATH
 } from "../../../../constant/route"
 
 import SearchInput from "../SearchInput"
+import MenuBtn from "./MenuBtn"
 
 const Example = () => {
   const history = useHistory()
-  const [showMenu, setShowMenu] = useState(false)
   const { t } = useTranslation()
   const dispatch = useDispatch()
   const currentUser = useSelector(currentUserSelector)
 
   const onSignOut = () => {
     localStorage.removeItem("firebaseui::rememberedAccounts")
+    localStorage.removeItem("rememberedUser")
+    localStorage.removeItem("oldPath")
     firebase.auth().signOut()
     toast.success("Đăng xuất thành công")
     history.push("/user")
@@ -39,13 +38,7 @@ const Example = () => {
   return (
     <div className="header d-flex justify-content-between">
       <div className="d-flex align-items-center">
-        <div
-          className="header__icon-menu me-3"
-          onClick={() => setShowMenu(!showMenu)}
-        >
-          <i className="fas fa-bars"></i>
-          <span>Menu</span>
-        </div>
+        <MenuBtn />
         <SwitchLang />
         <div className="header-search-input">
           <SearchInput />
@@ -56,11 +49,19 @@ const Example = () => {
           {currentUser.id ? (
             <div>
               <Link to={USER_INFO_PATH}>
-                <img
-                  className="header-avatar-user"
-                  src={currentUser.urlAvatar}
-                  alt="avatar"
-                />
+                {currentUser.urlAvatar ? (
+                  <img
+                    className="header-avatar-user"
+                    src={currentUser.urlAvatar}
+                    alt="avatar"
+                  />
+                ) : (
+                  <img
+                    className="header-avatar-user"
+                    src="https://www.pphfoundation.ca/wp-content/uploads/2018/05/default-avatar.png"
+                    alt="avatar"
+                  />
+                )}
               </Link>
               <button
                 onClick={() => onSignOut()}
@@ -80,37 +81,6 @@ const Example = () => {
         <img className="w-100" src={logo} alt="logo" />
       </Link>
       <img className="header-line" src={lineHeader} alt="line-header" />
-      <div className={classNames("header__list-menu", { "d-none": !showMenu })}>
-        <NavLink
-          activeClassName="header__list-menu-selected"
-          className="header__list-menu-item"
-          to={USER_PATH}
-          exact
-        >
-          {t("mainPage")}
-        </NavLink>
-        <NavLink
-          activeClassName="header__list-menu-selected"
-          className="header__list-menu-item"
-          to={CINEMAS_PATH}
-        >
-          {t("theaters")}
-        </NavLink>
-        <NavLink
-          activeClassName="header__list-menu-selected"
-          className="header__list-menu-item"
-          to={USER_INFO_PATH}
-        >
-          {t("userInfo")}
-        </NavLink>
-        <NavLink
-          activeClassName="header__list-menu-selected"
-          className="header__list-menu-item"
-          to={NEWS_PATH}
-        >
-          {t("events")}
-        </NavLink>
-      </div>
     </div>
   )
 }
