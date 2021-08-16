@@ -9,6 +9,8 @@ import {
   CINEMAS_PATH
 } from "../../../../../constant/route"
 import useClickOutside from "../../../../../customHook/useClickOutside"
+import { useSelector } from "react-redux"
+import { currentUserSelector } from "../../../../../app/authSlice"
 
 function MenuBtn(props) {
   const [showMenu, setShowMenu] = useState(false)
@@ -18,14 +20,15 @@ function MenuBtn(props) {
     setShowMenu(false)
   })
 
+  const currentUser = useSelector(currentUserSelector)
+
   return (
     <div ref={domNode}>
       <div
         className="header__icon-menu me-3"
         onClick={() => setShowMenu(!showMenu)}
       >
-        <i className="fas fa-bars"></i>
-        <span>Menu</span>
+        <i className="fas fa-bars" />
       </div>
       <div
         className={classNames(
@@ -51,14 +54,16 @@ function MenuBtn(props) {
         >
           {t("theaters")}
         </NavLink>
-        <NavLink
-          onClick={() => setShowMenu(false)}
-          activeClassName="header__list-menu-selected"
-          className="header__list-menu-item"
-          to={USER_INFO_PATH}
-        >
-          {t("userInfo")}
-        </NavLink>
+        {currentUser.id && (
+          <NavLink
+            onClick={() => setShowMenu(false)}
+            activeClassName="header__list-menu-selected"
+            className="header__list-menu-item"
+            to={USER_INFO_PATH}
+          >
+            {t("userInfo")}
+          </NavLink>
+        )}
         <NavLink
           onClick={() => setShowMenu(false)}
           activeClassName="header__list-menu-selected"
